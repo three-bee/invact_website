@@ -1,0 +1,125 @@
+{
+  "default": "subset_04",
+  "videos": [
+    {
+      "id": "subset_01",
+      "title": "Clip 01",
+      "src": "data/videos_ssv2_seed23/18168.mp4",
+      "start": 0,
+      "end": 0,
+      "verb_label": "putting something on a surface",
+      "atomic_text": "",
+      "view": "single"
+    },
+    {
+      "id": "subset_02",
+      "title": "Clip 02",
+      "src": "data/videos_ssv2_seed23/147536.mp4",
+      "start": 0,
+      "end": 0,
+      "verb_label": "putting something on a surface",
+      "atomic_text": "",
+      "view": "single"
+    },
+    {
+      "id": "subset_03",
+      "title": "Clip 03",
+      "src": "data/videos_ssv2_seed23/88546.mp4",
+      "start": 0,
+      "end": 0,
+      "verb_label": "putting something on a surface",
+      "atomic_text": "",
+      "view": "single"
+    },
+    {
+      "id": "subset_04",
+      "title": "Clip 04",
+      "src": "data/videos_ssv2_seed23/184172.mp4",
+      "start": 0,
+      "end": 0,
+      "verb_label": "tearing something into two pieces",
+      "atomic_text": "",
+      "view": "single"
+    },
+    {
+      "id": "subset_05",
+      "title": "Clip 05",
+      "src": "data/videos_ssv2_seed23/208999.mp4",
+      "start": 0,
+      "end": 0,
+      "verb_label": "tearing something into two pieces",
+      "atomic_text": "",
+      "view": "single"
+    },
+    {
+      "id": "subset_06",
+      "title": "Clip 06",
+      "src": "data/videos_ssv2_seed23/106297.mp4",
+      "start": 0,
+      "end": 0,
+      "verb_label": "tearing something into two pieces",
+      "atomic_text": "",
+      "view": "single"
+    },
+    {
+      "id": "subset_07",
+      "title": "Clip 07",
+      "src": "data/videos_ssv2_seed23/199368.mp4",
+      "start": 0,
+      "end": 0,
+      "verb_label": "showing something behind something",
+      "atomic_text": "",
+      "view": "single"
+    },
+    {
+      "id": "subset_08",
+      "title": "Clip 08",
+      "src": "data/videos_ssv2_seed23/22788.mp4",
+      "start": 0,
+      "end": 0,
+      "verb_label": "showing something behind something",
+      "atomic_text": "",
+      "view": "single"
+    },
+    {
+      "id": "subset_09",
+      "title": "Clip 09",
+      "src": "data/videos_ssv2_seed23/18603.mp4",
+      "start": 0,
+      "end": 0,
+      "verb_label": "showing something behind something",
+      "atomic_text": "",
+      "view": "single"
+    },
+    {
+      "id": "subset_10",
+      "title": "Clip 10",
+      "src": "data/videos_ssv2_seed23/134894.mp4",
+      "start": 0,
+      "end": 0,
+      "verb_label": "rolling something on a flat surface",
+      "atomic_text": "",
+      "view": "single"
+    },
+    {
+      "id": "subset_11",
+      "title": "Clip 11",
+      "src": "data/videos_ssv2_seed23/171423.mp4",
+      "start": 0,
+      "end": 0,
+      "verb_label": "rolling something on a flat surface",
+      "atomic_text": "",
+      "view": "single"
+    },
+    {
+      "id": "subset_12",
+      "title": "Clip 12",
+      "src": "data/videos_ssv2_seed23/200104.mp4",
+      "start": 0,
+      "end": 0,
+      "verb_label": "rolling something on a flat surface",
+      "atomic_text": "",
+      "view": "single"
+    }
+  ]
+}

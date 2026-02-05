@@ -1,0 +1,24 @@
+{
+  "datasets": [
+    {
+      "id": "quadruplet_results_1sAtomic_flow_clipvision_20251230-195343_20251228-181149_vv_05_attract_1_repel_1_dinov3_CE_05_embedDim256_step_050000",
+      "name": "quadruplet_results_1sAtomic_flow_clipvision_20251230-195343_20251228-181149_vv_05_attract_1_repel_1_dinov3_CE_05_embedDim256_step_050000",
+      "path": "quadruplet_results_1sAtomic_flow_clipvision_20251230-195343_20251228-181149_vv_05_attract_1_repel_1_dinov3_CE_05_embedDim256_step_050000"
+    },
+    {
+      "id": "viewpointrosetta_ckpt0005",
+      "name": "ViewpointRosetta ckpt_0005",
+      "path": "viewpointrosetta_ckpt0005"
+    },
+    {
+      "id": "egovlpv2",
+      "name": "EgoVLPv2",
+      "path": "egovlpv2"
+    },
+    {
+      "id": "quad_flow_clipvision_step050000",
+      "name": "Quadruplet Flow ClipVision step_050000",
+      "path": "quad_flow_clipvision_step050000"
+    }
+  ]
+}

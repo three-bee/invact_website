@@ -1,0 +1,810 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>InvAct</title>
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;600&family=Google+Sans+Code:wght@400;500&display=swap" />
+</head>
+<body>
+<main class="paper">
+<header class="paper-hero centered">
+<div class="paper-logos" aria-label="Institution logos">
+<a href="https://arvr.google.com/" class="logo-link" aria-label="Google AR & VR">
+<div class="paper-logo logo-google">
+<svg xmlns="http://www.w3.org/2000/svg" width="171" height="28" viewBox="0 0 171 28" fill="none" aria-hidden="true">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M95.8568 3.0166H93.48L86.7798 20.7535H89.0813L90.8558 15.8751H98.5024L100.277 20.7535H102.578L95.8568 3.0166ZM95.4373 7.5401L97.7818 13.8939H91.5763L93.9209 7.5401L94.6414 5.60164H94.7167L95.4373 7.5401Z" fill="#202124"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M110.139 3.01669H104.16V20.7536H106.3V13.5275H109.096L113.914 20.7536H116.388V20.6567L111.398 13.3982V13.3228C112.177 13.1631 112.912 12.8321 113.549 12.3536C114.189 11.8891 114.713 11.2805 115.076 10.5767C115.451 9.86705 115.643 9.07491 115.635 8.27208C115.65 7.31373 115.389 6.37135 114.882 5.55823C114.385 4.7658 113.688 4.11927 112.86 3.68438C112.022 3.24074 111.087 3.01138 110.139 3.01669ZM111.742 11.1475C111.211 11.4261 110.62 11.5703 110.021 11.5675H106.235V5.03054H110.172C110.784 5.01601 111.389 5.17664 111.914 5.49361C112.402 5.79181 112.806 6.21089 113.086 6.71054C113.36 7.18515 113.505 7.72372 113.506 8.27208C113.514 8.87104 113.345 9.45913 113.022 9.96285C112.709 10.4654 112.267 10.8745 111.742 11.1475Z" fill="#202124"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M135.617 19.9673L133.939 17.7596L136.015 14.3458L134.359 13.355L132.724 16.155L126.83 8.41195C126.434 7.92894 126.214 7.32488 126.207 6.69964C126.186 6.14707 126.405 5.61265 126.809 5.23503C127.215 4.8536 127.758 4.65181 128.314 4.67503C128.818 4.64899 129.305 4.85535 129.637 5.23503C129.989 5.64887 130.262 6.12325 130.444 6.63503L132.251 5.6658C131.986 4.82457 131.486 4.07704 130.81 3.51195C130.109 2.93391 129.222 2.63144 128.314 2.66118C127.562 2.6437 126.819 2.82972 126.163 3.19964C125.539 3.55603 125.014 4.06325 124.636 4.67503C124.262 5.27967 124.064 5.97741 124.066 6.68887C124.068 7.19113 124.178 7.68711 124.389 8.14272C124.652 8.69449 124.977 9.21471 125.357 9.69349C124.423 10.2583 123.641 11.0418 123.077 11.9766C122.529 12.8668 122.238 13.8922 122.238 14.9381C122.224 16.0484 122.518 17.1407 123.088 18.0935C123.652 19.0355 124.458 19.8089 125.421 20.3335C126.407 20.8841 127.519 21.1663 128.648 21.152C130.194 21.1704 131.682 20.5649 132.778 19.472L134.036 21.152L135.617 19.9673ZM126.518 11.223L131.616 17.9323C130.881 18.809 129.791 19.3074 128.648 19.2892C127.856 19.2997 127.075 19.1069 126.379 18.7292C125.707 18.3734 125.148 17.8362 124.765 17.1784C124.365 16.505 124.16 15.7329 124.174 14.9492C124.165 14.1837 124.386 13.4332 124.808 12.7953C125.233 12.1317 125.822 11.5898 126.518 11.223Z" fill="#202124"/>
+<path d="M141.553 3.0166H143.887L148.264 15.8751L148.856 17.6304H148.953L149.576 15.8751L154.147 3.0166H156.47L150.017 20.7535H147.866L141.553 3.0166Z" fill="#202124"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M164.01 3.01669H158.019L158.073 20.7536H160.159V13.5275H162.956L167.774 20.7536H170.204V20.6567L165.203 13.3982L165.257 13.3228C166.037 13.1631 166.772 12.8321 167.408 12.3536C168.052 11.8895 168.579 11.281 168.946 10.5767C169.316 9.86516 169.508 9.07429 169.505 8.27208C169.515 7.31443 169.254 6.37354 168.753 5.55823C168.252 4.7684 167.556 4.12259 166.731 3.68438C165.892 3.24074 164.958 3.01138 164.01 3.01669ZM165.601 11.1475C165.075 11.4261 164.487 11.5703 163.891 11.5675H160.106V5.03054H164.031C164.644 5.01601 165.248 5.17664 165.773 5.49361C166.265 5.7915 166.672 6.21044 166.956 6.71054C167.231 7.18515 167.375 7.72372 167.376 8.27208C167.384 8.87104 167.216 9.45913 166.892 9.96285C166.575 10.4658 166.129 10.8748 165.601 11.1475Z" fill="#202124"/>
+<path d="M10.1632 21.1514C4.60437 21.152 0.0764707 16.6803 0 11.1145C0.0764707 5.54871 4.60437 1.07707 10.1632 1.0776C12.7332 1.03311 15.2119 2.03137 17.0355 3.84529L15.1104 5.77298C13.7801 4.49917 12.0036 3.79922 10.1632 3.82375C8.24096 3.82358 6.39882 4.59479 5.04872 5.96493C3.69861 7.33507 2.95316 9.18986 2.97906 11.1145C2.95316 13.0392 3.69861 14.894 5.04872 16.2641C6.39882 17.6343 8.24096 18.4055 10.1632 18.4053C12.0581 18.4818 13.8973 17.7545 15.2287 16.4022C16.1042 15.4445 16.6309 14.2188 16.7236 12.9238H10.1632V10.2099H19.3585C19.4634 10.7745 19.5138 11.3479 19.5091 11.9222C19.599 14.2694 18.7736 16.5596 17.2075 18.3084C15.3807 20.2318 12.8115 21.2687 10.1632 21.1514Z" fill="#202124"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M27.4246 21.0544C30.935 21.0544 33.7807 18.2049 33.7807 14.6898C33.7807 11.1747 30.935 8.3252 27.4246 8.3252C23.9143 8.3252 21.0686 11.1747 21.0686 14.6898C21.0686 18.2049 23.9143 21.0544 27.4246 21.0544ZM29.3127 11.2927C30.4725 12.013 31.1244 13.3293 30.9952 14.6898C31.1244 16.0503 30.4725 17.3666 29.3127 18.087C28.1529 18.8073 26.6856 18.8073 25.5258 18.087C24.366 17.3666 23.7141 16.0503 23.8433 14.6898C23.7141 13.3293 24.366 12.013 25.5258 11.2927C26.6856 10.5723 28.1529 10.5723 29.3127 11.2927Z" fill="#202124"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M44.9384 20.4291C46.9462 19.2313 48.1373 17.0283 48.0412 14.6901C48.1373 12.3518 46.9462 10.1488 44.9384 8.95106C42.9307 7.75329 40.4289 7.75329 38.4212 8.95106C36.4134 10.1488 35.2224 12.3518 35.3184 14.6901C35.2224 17.0283 36.4134 19.2313 38.4212 20.4291C40.4289 21.6269 42.9307 21.6269 44.9384 20.4291ZM43.5732 11.2929C44.733 12.0133 45.3849 13.3296 45.2557 14.6901C45.3849 16.0506 44.733 17.3669 43.5732 18.0872C42.4134 18.8076 40.9462 18.8076 39.7864 18.0872C38.6266 17.3669 37.9747 16.0506 38.1039 14.6901C37.9747 13.3296 38.6266 12.0133 39.7864 11.2929C40.9462 10.5726 42.4134 10.5726 43.5732 11.2929Z" fill="#202124"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M61.9364 20.2143V8.61582H59.2584V9.69274H59.1509C58.2926 8.71687 57.0509 8.16598 55.7524 8.18505C52.1886 8.18505 49.2996 11.078 49.2996 14.6466C49.2996 18.2152 52.1886 21.1081 55.7524 21.1081C57.0474 21.1442 58.2919 20.6039 59.1509 19.6327H59.2369V20.5697C59.2369 23.0358 57.9356 24.3604 55.7847 24.3604C54.3431 24.3153 53.0702 23.406 52.5582 22.0558L50.0847 23.1327C51.0391 25.4512 53.3018 26.9589 55.8062 26.945C59.1294 26.945 61.9364 24.9958 61.9364 20.2143ZM58.5591 12.0087C59.2097 12.7514 59.5318 13.7265 59.452 14.7112C59.5288 15.6899 59.2041 16.6576 58.5526 17.3912C57.9012 18.1248 56.9794 18.5609 55.9998 18.5989C55.0048 18.5712 54.063 18.1432 53.3871 17.4116C52.7112 16.68 52.3581 15.7066 52.4077 14.7112C52.3521 13.709 52.7016 12.7266 53.3772 11.9852C54.0529 11.2438 54.998 10.8057 55.9998 10.7697C56.9851 10.8189 57.9086 11.2659 58.5591 12.0087Z" fill="#202124"/>
+<path d="M66.9052 1.76758V20.7537H64.0767V1.76758H66.9052Z" fill="#202124"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M80.2089 18.287L78.0579 16.8116C77.3838 17.9365 76.163 18.6175 74.853 18.5993C73.5092 18.6642 72.2662 17.8874 71.7342 16.6501L80.3379 13.0747L80.0476 12.3316C79.2487 9.93685 77.0401 8.29753 74.5196 8.22852C71.1964 8.22852 68.5185 10.8454 68.5185 14.6901C68.4627 16.3959 69.1052 18.0506 70.2972 19.2706C71.4891 20.4907 73.1271 21.1701 74.8315 21.1516C76.9929 21.1709 79.017 20.0926 80.2089 18.287ZM77.0577 12.0947L71.2825 14.4962C71.2357 13.5534 71.5655 12.6307 72.199 11.9316C72.8325 11.2326 73.7178 10.8147 74.6594 10.7701C75.6504 10.6963 76.5913 11.216 77.0577 12.0947Z" fill="#202124"/>
+</svg>
+</div>
+</a>
+<a href="https://vlg.inf.ethz.ch/" class="logo-link" aria-label="VLG">
+<img class="paper-logo-img logo-vlg" src="data/vlg.png" alt="VLG" />
+</a>
+<a href="https://ethar.ethz.ch/" class="logo-link" aria-label="ETH AR Lab">
+<img class="paper-logo-img logo-ethar" src="data/ethar.png" alt="ETH AR Lab" />
+</a>
+<a href="https://inf.ethz.ch/" class="logo-link" aria-label="ETH Zurich">
+<img class="paper-logo-img logo-ethz" src="data/ethz.svg" alt="ETH Zurich" />
+</a>
+<a href="https://geometric-rl.mpi-inf.mpg.de/" class="logo-link" aria-label="MPI">
+<img class="paper-logo-img logo-mpi" src="data/mpi.svg" alt="MPI" />
+</a>
+</div>
+<h1 class="paper-title">InvAct: View and Scene-invariant Atomic Action Learning from Videos</h1>
+<div class="paper-authors">
+<a href="#" class="paper-link">Bahri Batuhan Bilecen</a> ·
+<a href="#" class="paper-link">Korrawe Karunratanakul</a> ·
+<a href="#" class="paper-link">Vasileios Choutas</a> ·
+<a href="#" class="paper-link">Thabo Beeler</a> ·
+<a href="#" class="paper-link">Bernt Schiele</a> ·
+<a href="#" class="paper-link">Jan Eric Lenssen</a> ·
+<a href="#" class="paper-link">Siyu Tang</a>
+</div>
+<div class="paper-meta">
+<a href="#" class="paper-link">Preprint</a> ·
+<a href="#" class="paper-link">Code and models</a>
+</div>
+</header>
+
+<section class="paper-section centered-section">
+<p>
+⚛️ <strong>TL;DR:</strong> We learn <strong>atomic action embeddings</strong> that are invariant to both viewpoint and scene changes. This enables robust retrieval and transfer across short- and long-horizon human-centric and robot-centric action downstream tasks.</p>
+</section>
+
+<section class="paper-section video-query-section">
+<div class="video-query-header">
+<p>Select a query clip to reorder the gallery by external rankings.</p>
+<div id="videoConfigTabs" class="video-config-tabs"></div>
+</div>
+<div id="videoGalleryStatus" class="video-gallery-status hidden"></div>
+<div class="video-gallery-wrap">
+<div id="videoGalleryOverlay" class="video-gallery-overlay">
+<div class="video-gallery-overlay-inner">
+<div class="video-gallery-overlay-label">Loading videos…</div>
+</div>
+</div>
+<div id="videoGallery" class="video-gallery"></div>
+</div>
+</section>
+
+<section class="paper-section centered-section">
+<h2>Abstract</h2>
+<p>
+Action learning should capture interaction dynamics that generalize between viewpoint and scene changes. Although recent work pursues view-invariant representations, these methods often overfit to scene cues, weakening their ability to model fine interactions. This issue is especially acute for atomic actions, which are short, interaction-centric primitives. We address this with an atomic action embedding model trained to be invariant to both ego–exo viewpoint shifts and scene changes. We learn a latent space such that clips of the same atomic action are pulled together across scenes and views, while different actions from the same scene are pushed apart. We further use language to ground the embeddings in semantics. Experiments show that the proposed representation significantly improves retrieval across cross-view and cross-scene settings, shows strong transfer to unseen datasets, enables longer keystep actions obtained by zero-shot combination of our atomic embeddings, and shows promising results on a preliminary robotics manipulation task. We believe that the proposed approach will benefit robotic and human-understanding downstream tasks.
+</p>
+</section>
+
+
+
+
+</div>
+</section>
+<section class="paper-section">
+<h2>Atomic actions vs. keystep actions</h2>
+<div class="paper-grid method-grid">
+<div class="method-notes">
+<p>
+<strong>Keystep actions</strong>
+<em>(e.g. checking for damages, cooking omelet, repairing a bike, unboxing a package)</em>
+describe longer, higher-level procedures that often correlate strongly with objects, the context of
+the scene, and appearance. These higher-level activities can be decomposed into
+<strong>atomic actions</strong>
+<em>(e.g. pushing, pulling, cutting, placing a box on a table)</em>, which are short
+interaction-centric primitives, characterized by fine-grained temporal dynamics and contact patterns.
+We utilize the notation in Ego-Exo4D dataset for atomic and keystep actions.
+</p>
+
+<p><strong>
+We train with atomic actions, and demonstrate on both atomic actions and keystep actions.
+</strong></p>
+</div>
+<div class="figure-stack">
+<div class="figure-block">
+<img class="figure-embed" src="data/arch_27_v2.svg" alt="Architecture of our action extractor method" />
+<div class="figure-caption">
+Architecture of our action extractor method. We first only train the tubelet embedder and
+transformer with atomic-action labels but can later infer atomic-actions and keystep-actions.
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="paper-section">
+<h2>The problem of view-invariance with keystep actions</h2>
+<div class="paper-grid method-grid keystep-problem-layout">
+<div class="keystep-problem-grid">
+<div class="keystep-problem-row">
+<div class="keystep-cell keystep-cell--spacer"></div>
+<div class="keystep-title keystep-grid-title">Top-4 matches (ego-ego)</div>
+<div class="keystep-cell keystep-cell--query">
+<div class="paper-vid-item keystep-query query-highlight">
+<video
+class="paper-vid"
+autoplay
+muted
+loop
+playsinline
+preload="metadata"
+src="data/paper_vids/query_1.mp4"
+></video>
+<div class="video-card-title">hold</div>
+</div>
+</div>
+<div class="keystep-cell keystep-cell--grid">
+<div class="keystep-grid-row">
+<div class="keystep-grid-labels">
+<div class="keystep-grid-label">Ours</div>
+<div class="keystep-grid-label">Rosetta</div>
+</div>
+<div class="paper-vid-item keystep-grid">
+<video
+class="paper-vid"
+autoplay
+muted
+loop
+playsinline
+preload="metadata"
+src="data/paper_vids/grid_1_trim.mp4"
+></video>
+</div>
+</div>
+</div>
+</div>
+<div class="keystep-problem-row">
+<div class="keystep-cell keystep-cell--spacer"></div>
+<div class="keystep-title keystep-grid-title">Top-4 matches (ego-exo)</div>
+<div class="keystep-cell keystep-cell--query">
+<div class="paper-vid-item keystep-query query-highlight">
+<video
+class="paper-vid"
+autoplay
+muted
+loop
+playsinline
+preload="metadata"
+src="data/paper_vids/query_2.mp4"
+></video>
+<div class="video-card-title">pick</div>
+</div>
+</div>
+<div class="keystep-cell keystep-cell--grid">
+<div class="keystep-grid-row">
+<div class="keystep-grid-labels">
+<div class="keystep-grid-label">Ours</div>
+<div class="keystep-grid-label">Rosetta</div>
+</div>
+<div class="paper-vid-item keystep-grid">
+<video
+class="paper-vid"
+autoplay
+muted
+loop
+playsinline
+preload="metadata"
+src="data/paper_vids/grid_2_trim.mp4"
+></video>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="method-notes">
+<p>
+Videos above illustrate retrieval behavior in the Ego-Exo4D validation set, with all scenes included in the retrieval pool, for our method and baseline Viewpoint Rosetta.
+</p>
+
+<p>
+It can be seen that prior methods like Rosetta often exploit a shortcut by ranking top-k clips according to shared scene context, such as layout and objects, rather than interaction dynamics. 
+</p>
+
+<p>
+This specific failure mode is most evident in the ego-exo examples. The method may return a hit with a superficially similar action, but it does so by retrieving clips from the same kitchen and matching static cues such as the blue bowl and brown cabinets, rather than recognizing the underlying interaction.
+As a result, it can miss stronger dynamic matches that occur in different scenes.
+</p>
+
+<p><strong>
+In comparison, InvAct can retrieve diverse, scene and view-invariant clips, that match the query action dynamics more faithfully.
+</strong></p> 
+</div>
+</div>
+</section>
+
+<section class="paper-section phyworld-grid-section">
+<h2>Qualitative comparison</h2>
+<p>
+We compare the retrieval grids from InvAct (top) and Viewpoint Rosetta (bottom).
+Each column shows a fixed query video (leftmost video in each row) and top-3 matches in the PhyWorld dataset.
+The baseline mostly behaves like a near-static visual matcher, prioritizing color and shape similarity (column 1 and 3)
+over the temporal cues required to distinguish fine-grained actions.
+InvAct can successfully retrieve same-directioned matches with diverse appearances.
+</p>
+<div class="phyworld-grid-columns">
+<div class="phyworld-grid-col">
+<div class="phyworld-grid-item">
+<div class="phyworld-grid-label">InvAct</div>
+<div class="phyworld-grid-frame">
+<video
+class="phyworld-grid-video"
+autoplay
+muted
+loop
+playsinline
+preload="metadata"
+src="data/phyworld_grids/ours_query_003.mp4"
+></video>
+</div>
+</div>
+<div class="phyworld-grid-item">
+<div class="phyworld-grid-label">Viewpoint Rosetta</div>
+<div class="phyworld-grid-frame">
+<video
+class="phyworld-grid-video"
+autoplay
+muted
+loop
+playsinline
+preload="metadata"
+src="data/phyworld_grids/rosetta_query_003.mp4"
+></video>
+</div>
+</div>
+</div>
+<div class="phyworld-grid-col">
+<div class="phyworld-grid-item">
+<div class="phyworld-grid-label">InvAct</div>
+<div class="phyworld-grid-frame">
+<video
+class="phyworld-grid-video"
+autoplay
+muted
+loop
+playsinline
+preload="metadata"
+src="data/phyworld_grids/ours_query_020.mp4"
+></video>
+</div>
+</div>
+<div class="phyworld-grid-item">
+<div class="phyworld-grid-label">Viewpoint Rosetta</div>
+<div class="phyworld-grid-frame">
+<video
+class="phyworld-grid-video"
+autoplay
+muted
+loop
+playsinline
+preload="metadata"
+src="data/phyworld_grids/rosetta_query_020.mp4"
+></video>
+</div>
+</div>
+</div>
+<div class="phyworld-grid-col">
+<div class="phyworld-grid-item">
+<div class="phyworld-grid-label">InvAct</div>
+<div class="phyworld-grid-frame">
+<video
+class="phyworld-grid-video"
+autoplay
+muted
+loop
+playsinline
+preload="metadata"
+src="data/phyworld_grids/ours_query_118.mp4"
+></video>
+</div>
+</div>
+<div class="phyworld-grid-item">
+<div class="phyworld-grid-label">Viewpoint Rosetta</div>
+<div class="phyworld-grid-frame">
+<video
+class="phyworld-grid-video"
+autoplay
+muted
+loop
+playsinline
+preload="metadata"
+src="data/phyworld_grids/rosetta_query_118.mp4"
+></video>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+
+<section class="paper-section paper-vids-section">
+<p>
+Additional atomic-action video-video retrieval grids across view pairs from Ego-Exo4D dataset.
+</p>
+<div class="paper-vids-grid-wrap">
+<div class="paper-vids-labels">
+<div class="paper-vids-label">Query</div>
+<div class="paper-vids-label">InvAct</div>
+<div class="paper-vids-label">Rosetta</div>
+<div class="paper-vids-label">SUM-L</div>
+<div class="paper-vids-label">EgoVLP</div>
+<div class="paper-vids-label">LiFT</div>
+<div class="paper-vids-label">FlowFeat</div>
+</div>
+<div class="paper-vids-grid">
+<div class="paper-vid-item">
+<video
+class="paper-vid"
+autoplay
+muted
+loop
+playsinline
+preload="metadata"
+src="data/paper_vids/egoego1grid.mp4"
+></video>
+</div>
+<div class="paper-vid-item">
+<video
+class="paper-vid"
+autoplay
+muted
+loop
+playsinline
+preload="metadata"
+src="data/paper_vids/egoexo_grid.mp4"
+></video>
+</div>
+<div class="paper-vid-item">
+<video
+class="paper-vid"
+autoplay
+muted
+loop
+playsinline
+preload="metadata"
+src="data/paper_vids/exoego_grid.mp4"
+></video>
+</div>
+<div class="paper-vid-item">
+<video
+class="paper-vid"
+autoplay
+muted
+loop
+playsinline
+preload="metadata"
+src="data/paper_vids/exoexo_grid.mp4"
+></video>
+</div>
+</div>
+</div>
+</section>
+
+
+
+
+
+
+<section class="paper-section">
+<h2>Quantitative results</h2>
+<p>
+The table reveals InvAct can match keystep-specific trained methods, and outperforms all baselines on atomic-action retrieval, in cross-scene and cross-view scenarios.
+We use the atomic-action trained InvAct model for both atomic and keystep action retrieval.
+</p>
+<div class="table-wrap">
+<div class="table-caption">
+Video-video retrieval hit-rates on Ego-Exo4D validation. Best three results are shown in
+<strong>bold</strong>, <u>underlined</u>, and <em>italic</em>.
+</div>
+<table class="results-table">
+<thead>
+<tr>
+<th rowspan="3">Group</th>
+<th rowspan="3">Method</th>
+<th colspan="6">Atomic action hit-rates (@10)</th>
+<th colspan="6">Keystep action hit-rates (@10)</th>
+</tr>
+<tr>
+<th colspan="3">Cross-scene (&uarr;)</th>
+<th colspan="3">Cross-view (&uarr;)</th>
+<th colspan="3">Cross-scene (&uarr;)</th>
+<th colspan="3">Cross-view (&uarr;)</th>
+</tr>
+<tr>
+<th>g&rarr;g</th>
+<th>x&rarr;x</th>
+<th>avg.</th>
+<th>g&rarr;x</th>
+<th>x&rarr;g</th>
+<th>avg.</th>
+<th>g&rarr;g</th>
+<th>x&rarr;x</th>
+<th>avg.</th>
+<th>g&rarr;x</th>
+<th>x&rarr;g</th>
+<th>avg.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>Random</td>
+<td class="c14">3.04</td>
+<td class="c14">3.01</td>
+<td class="c14">3.02</td>
+<td class="c14">2.15</td>
+<td class="c14">3.70</td>
+<td class="c14">2.92</td>
+<td class="c14">6.23</td>
+<td class="c14">7.35</td>
+<td class="c14">6.79</td>
+<td class="c13">6.59</td>
+<td class="c14">6.72</td>
+<td class="c14">6.65</td>
+</tr>
+<tr>
+<td rowspan="5">General embeds</td>
+<td>CLIP</td>
+<td class="c13">16.01</td>
+<td class="c11">15.33</td>
+<td class="c13">15.67</td>
+<td class="c12">14.03</td>
+<td class="c12">16.25</td>
+<td class="c11">15.14</td>
+<td class="c9">26.76</td>
+<td class="c5">20.47</td>
+<td class="c9">23.61</td>
+<td class="c6">17.71</td>
+<td class="c5">17.68</td>
+<td class="c7">17.70</td>
+</tr>
+<tr>
+<td>DINOv3</td>
+<td class="c11">19.08</td>
+<td class="c12">15.11</td>
+<td class="c11">17.09</td>
+<td class="c13">13.60</td>
+<td class="c11">16.32</td>
+<td class="c12">14.96</td>
+<td class="c8">28.50</td>
+<td class="c6">20.40</td>
+<td class="c8">24.45</td>
+<td class="c4">24.43</td>
+<td class="c4">19.42</td>
+<td class="c4">21.93</td>
+</tr>
+<tr>
+<td>V-JEPA 2</td>
+<td class="c12">17.83</td>
+<td class="c13">14.05</td>
+<td class="c12">15.94</td>
+<td class="c11">15.32</td>
+<td class="c10">18.40</td>
+<td class="c10">16.86</td>
+<td class="c6">33.75</td>
+<td class="c4">21.55</td>
+<td class="c5">27.65</td>
+<td class="c11">14.40</td>
+<td class="c6">17.45</td>
+<td class="c10">15.93</td>
+</tr>
+<tr>
+<td>FlowFeat</td>
+<td class="c8">23.56</td>
+<td class="c3">24.04</td>
+<td class="c7">23.80</td>
+<td class="c7">19.70</td>
+<td class="c5">23.54</td>
+<td class="c7">21.62</td>
+<td class="c11">21.25</td>
+<td class="c11">15.51</td>
+<td class="c11">18.38</td>
+<td class="c12">11.84</td>
+<td class="c12">12.89</td>
+<td class="c13">12.37</td>
+</tr>
+<tr>
+<td>LiFT</td>
+<td class="c5">27.84</td>
+<td class="c5">23.15</td>
+<td class="c6">25.50</td>
+<td class="c5">21.71</td>
+<td class="c1"><u>27.08</u></td>
+<td class="c1"><u>24.39</u></td>
+<td class="c10">25.88</td>
+<td class="c8">19.02</td>
+<td class="c10">22.45</td>
+<td class="c5">20.79</td>
+<td class="c9">16.23</td>
+<td class="c6">18.51</td>
+</tr>
+<tr>
+<td rowspan="5">Single view</td>
+<td>LAPA</td>
+<td class="c7">25.24</td>
+<td class="c1"><u>26.52</u></td>
+<td class="c3">25.88</td>
+<td class="c10">15.96</td>
+<td class="c13">13.82</td>
+<td class="c13">14.89</td>
+<td class="c13">13.58</td>
+<td class="c12">15.28</td>
+<td class="c13">14.43</td>
+<td class="c10">15.09</td>
+<td class="c11">13.94</td>
+<td class="c11">14.51</td>
+</tr>
+<tr>
+<td>TimeSFormer</td>
+<td class="c6">26.21</td>
+<td class="c9">20.73</td>
+<td class="c8">23.47</td>
+<td class="c8">19.55</td>
+<td class="c3">23.87</td>
+<td class="c6">21.71</td>
+<td class="c7">30.50</td>
+<td class="c7">19.84</td>
+<td class="c7">25.17</td>
+<td class="c7">17.55</td>
+<td class="c10">15.97</td>
+<td class="c9">16.76</td>
+</tr>
+<tr>
+<td>LaViLa</td>
+<td class="c4">28.52</td>
+<td class="c2"><em>24.25</em></td>
+<td class="c2"><em>26.39</em></td>
+<td class="c1"><u>23.29</u></td>
+<td class="c4">23.84</td>
+<td class="c3">23.57</td>
+<td class="c4">41.26</td>
+<td class="c9">17.68</td>
+<td class="c4">29.47</td>
+<td class="c5">20.79</td>
+<td class="c8">16.43</td>
+<td class="c5">18.61</td>
+</tr>
+<tr>
+<td>EgoVLP</td>
+<td class="c1"><u>29.61</u></td>
+<td class="c7">21.77</td>
+<td class="c4">25.69</td>
+<td class="c2"><em>22.34</em></td>
+<td class="c6">23.52</td>
+<td class="c4">22.93</td>
+<td class="c0"><strong>49.82</strong></td>
+<td class="c2"><em>26.01</em></td>
+<td class="c2"><em>37.91</em></td>
+<td class="c2"><em>29.94</em></td>
+<td class="c2"><em>22.53</em></td>
+<td class="c2"><em>26.23</em></td>
+</tr>
+<tr>
+<td>EgoVLPv2</td>
+<td class="c3">29.35</td>
+<td class="c6">22.00</td>
+<td class="c5">25.67</td>
+<td class="c4">21.88</td>
+<td class="c2"><em>25.30</em></td>
+<td class="c2"><em>23.59</em></td>
+<td class="c1"><u>48.11</u></td>
+<td class="c3">23.84</td>
+<td class="c3">35.98</td>
+<td class="c3">27.55</td>
+<td class="c3">22.43</td>
+<td class="c3">24.99</td>
+</tr>
+<tr>
+<td rowspan="4">Multi view</td>
+<td>VI Encoder</td>
+<td class="c10">19.95</td>
+<td class="c10">18.64</td>
+<td class="c10">19.30</td>
+<td class="c9">19.01</td>
+<td class="c9">20.40</td>
+<td class="c9">19.71</td>
+<td class="c12">19.71</td>
+<td class="c10">16.17</td>
+<td class="c12">17.94</td>
+<td class="c8">16.63</td>
+<td class="c7">17.22</td>
+<td class="c8">16.93</td>
+</tr>
+<tr>
+<td>SUM-L</td>
+<td class="c2"><em>29.58</em></td>
+<td class="c4">23.33</td>
+<td class="c1"><u>26.46</u></td>
+<td class="c3">22.29</td>
+<td class="c7">23.27</td>
+<td class="c5">22.78</td>
+<td class="c5">36.04</td>
+<td class="c13">14.73</td>
+<td class="c6">25.39</td>
+<td class="c9">15.71</td>
+<td class="c13">9.81</td>
+<td class="c12">12.76</td>
+</tr>
+<tr>
+<td>Rosetta</td>
+<td class="c9">22.38</td>
+<td class="c8">20.95</td>
+<td class="c9">21.66</td>
+<td class="c6">21.66</td>
+<td class="c8">21.21</td>
+<td class="c8">21.43</td>
+<td class="c3">43.82</td>
+<td class="c1"><u>34.42</u></td>
+<td class="c1"><u>39.12</u></td>
+<td class="c0"><strong>39.94</strong></td>
+<td class="c1"><u>34.77</u></td>
+<td class="c0"><strong>37.35</strong></td>
+</tr>
+<tr>
+<td><strong>Ours</strong></td>
+<td class="c0"><strong>33.68</strong></td>
+<td class="c0"><strong>30.53</strong></td>
+<td class="c0"><strong>32.10</strong></td>
+<td class="c0"><strong>31.23</strong></td>
+<td class="c0"><strong>30.12</strong></td>
+<td class="c0"><strong>30.68</strong></td>
+<td class="c2"><em>44.18</em></td>
+<td class="c0"><strong>38.54</strong></td>
+<td class="c0"><strong>41.36</strong></td>
+<td class="c1"><u>36.34</u></td>
+<td class="c0"><strong>35.62</strong></td>
+<td class="c1"><u>35.98</u></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section class="paper-section">
+<h2>Downstream on VLA pretraining for robotic manipulation</h2>
+<div class="montage-title-row">
+<div class="phyworld-grid-label">Task 1</div>
+<div class="phyworld-grid-label">Task 2</div>
+<div class="phyworld-grid-label">Task 3</div>
+<div class="phyworld-grid-label">Task 4</div>
+<div class="phyworld-grid-label">Task 5</div>
+<div class="phyworld-grid-label">Task 6</div>
+<div class="phyworld-grid-label">Task 7</div>
+<div class="phyworld-grid-label">Task 8</div>
+<div class="phyworld-grid-label">Task 9</div>
+<div class="phyworld-grid-label">Task 10</div>
+</div>
+<div class="paper-vid-item paper-video">
+<video
+class="paper-vid"
+autoplay
+muted
+loop
+playsinline
+preload="auto"
+src="data/paper_vids/success_montage.mp4?v=1"
+></video>
+</div>
+<div class="paper-grid method-grid">
+<div class="method-notes">
+<p>
+We further evaluate our action embeddings on simulated robotic manipulation tasks. Following LAPA, we use latent actions for VLA pretraining and measure task success rates. Specifically, we pretrain OpenVLA with atomic actions derived from both LAPA and our method on the SSV2 dataset, and then post-train on LIBERO using its task labels. Performance is evaluated on the LIBERO-10 benchmark in simulation.
+</p>
+
+<p>
+Right figure shows that our embedding space improves VLA performance and increases success rates on downstream robotic tasks. Specifically, baseline achieves 34% success rate, LAPA improves +10% and ours improve +18% over the baseline. These results indicate that our representations can help bridge human-centric action understanding and robot-centric action learning.
+</p>
+</div>
+<div class="figure-stack">
+<div class="figure-block">
+<img class="figure-embed" src="data/libero10_scores.svg" alt="LIBERO-10 scores" />
+</div>
+</div>
+</div>
+</section>
+
+<section class="paper-section interactive-section">
+<h2>Interact with the latent space!</h2>
+<p>
+Explore three model variants side-by-side. Hover to inspect samples. Double-click to reset the zoom. Use the floating control
+menu to filter by verb, take group, or view.
+</p>
+
+<div class="layout interactive-layout">
+<div id="datasetSubtitle" class="hidden"></div>
+<section class="panel viz">
+<div class="canvas-grid large">
+<div class="canvas-panel">
+<div class="canvas-title" id="panelTitleA">InvAct</div>
+<button id="controlFab" class="control-fab control-fab--canvas" aria-label="Open controls"></button>
+<div id="controlMenu" class="control-menu control-menu--canvas">
+<div class="panel-title">Controls</div>
+
+<div class="field">
+<label class="field-label">View</label>
+<div class="segmented" id="viewToggle">
+<button data-view="ego">Ego</button>
+<button data-view="exo">Exo</button>
+<button data-view="both" class="active">Both</button>
+</div>
+</div>
+
+<div class="field">
+<label class="field-label" for="colorBy">Color By</label>
+<select id="colorBy">
+<option value="verb">Verb</option>
+<option value="scene">Scene</option>
+<option value="none">None</option>
+</select>
+</div>
+
+<div class="field">
+<label class="field-label">Top-15 Verbs</label>
+<div id="topVerbList" class="chip-list"></div>
+</div>
+
+<div class="field">
+<label class="field-label" for="takeFilter">Take Group (B)</label>
+<select id="takeFilter"></select>
+</div>
+
+<div class="field">
+<button id="resetView" class="primary">Reset View</button>
+</div>
+
+<div class="stats hidden" id="stats"></div>
+</div>
+<div class="canvas-wrap">
+<canvas id="scatterA"></canvas>
+<div class="hud">
+<div class="hud-chip status-chip" id="statusA">Loading...</div>
+<div class="hud-chip" id="hoverInfoA"></div>
+</div>
+</div>
+</div>
+<div class="canvas-panel">
+<div class="canvas-title" id="panelTitleB">Viewpoint Rosetta</div>
+<div class="canvas-wrap">
+<canvas id="scatterB"></canvas>
+<div class="hud">
+<div class="hud-chip status-chip" id="statusB">Loading...</div>
+<div class="hud-chip" id="hoverInfoB"></div>
+</div>
+</div>
+</div>
+<div class="canvas-panel">
+<div class="canvas-title" id="panelTitleC">EgoVLPv2</div>
+<div class="canvas-wrap">
+<canvas id="scatterC"></canvas>
+<div class="hud">
+<div class="hud-chip status-chip" id="statusC">Loading...</div>
+<div class="hud-chip" id="hoverInfoC"></div>
+</div>
+</div>
+<div class="legend-floating hidden" id="verbLegendWrap">
+<div id="verbLegend" class="legend"></div>
+</div>
+</div>
+</div>
+</section>
+
+</main>
+
+
+<div id="globalTooltip" class="tooltip hidden">
+<div class="tooltip-title" id="globalTooltipTitle"></div>
+<div class="tooltip-meta" id="globalTooltipMeta"></div>
+</div>
+
+<script defer src="app.js"></script>
+</body>
+</html>
