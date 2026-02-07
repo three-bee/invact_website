@@ -8,6 +8,7 @@
   --accent: #264653;
   --accent-2: #2a9d8f;
   --accent-3: #e76f51;
+  --gradient-accent: #31a3c5;
   --shadow: rgba(16, 16, 24, 0.12);
   --ring: rgba(42, 157, 143, 0.25);
   --radius: 16px;
@@ -1076,11 +1077,6 @@ button:hover {
   width: 100%;
 }
 
-.paper-vid-item.query-highlight {
-  border: 1px solid rgba(42, 157, 143, 0.95);
-  box-shadow: 0 0 0 2px rgba(42, 157, 143, 0.25), 0 16px 28px rgba(42, 157, 143, 0.26);
-}
-
 .paper-vid-item.keystep-query {
   display: flex;
   flex-direction: column;
@@ -1119,8 +1115,16 @@ button:hover {
   text-align: center;
 }
 
-.video-config-tabs {
+.video-query-controls {
   margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-config-tabs {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -1159,6 +1163,45 @@ button:hover {
   background: rgba(42, 157, 143, 0.12);
   border-color: rgba(42, 157, 143, 0.8);
   color: #0f3e39;
+}
+
+.video-shuffle-btn {
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  background: rgba(42, 157, 143, 0.12);
+  color: #0f3e39;
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.video-nav-btn {
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  background: rgba(42, 157, 143, 0.12);
+  color: #0f3e39;
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.video-nav-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.video-shuffle-btn:hover {
+  border-color: rgba(42, 157, 143, 0.8);
+  box-shadow: 0 10px 18px rgba(42, 157, 143, 0.2);
+}
+
+.video-nav-btn:hover {
+  border-color: rgba(42, 157, 143, 0.8);
+  box-shadow: 0 10px 18px rgba(42, 157, 143, 0.2);
 }
 
 .video-gallery-status {
@@ -1204,9 +1247,45 @@ button:hover {
   letter-spacing: 0.02em;
 }
 
-.video-gallery {
+.video-query-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.video-result-header {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 14px;
+  align-items: center;
+}
+
+.video-result-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  text-align: center;
+}
+
+.video-result-title-query {
+  grid-column: 1 / span 1;
+}
+
+.video-result-title-matches {
+  grid-column: 2 / span 5;
+}
+
+.video-query-row {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.video-result-row {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 14px;
 }
 
@@ -1231,23 +1310,24 @@ button:hover {
 }
 
 .video-card.selected {
-  border-color: rgba(42, 157, 143, 0.95);
-  box-shadow: 0 0 0 2px rgba(42, 157, 143, 0.25), 0 16px 28px rgba(42, 157, 143, 0.26);
+  border-color: var(--gradient-accent);
+  box-shadow: 0 0 0 2px rgba(49, 163, 197, 0.25), 0 16px 28px rgba(49, 163, 197, 0.26);
 }
 
 .video-card.verb-match {
-  border-color: rgba(231, 111, 81, 0.95);
-  box-shadow: 0 0 0 2px rgba(231, 111, 81, 0.22), 0 14px 24px rgba(231, 111, 81, 0.22);
+  border-color: rgba(42, 157, 143, 0.95);
+  box-shadow: 0 0 0 2px rgba(42, 157, 143, 0.22), 0 14px 24px rgba(42, 157, 143, 0.22);
 }
 
 .video-thumb {
   width: 100%;
   aspect-ratio: 1 / 1;
   border-radius: 10px;
-  background: #ffffff;
+  background: #0b0f16;
   object-fit: cover;
   transform: scale(1.06);
   transform-origin: center;
+  display: block;
 }
 
 .video-thumb.placeholder {
@@ -1273,6 +1353,28 @@ button:hover {
   border-radius: 999px;
   padding: 2px 8px;
   align-self: flex-start;
+}
+
+.video-card-query {
+  background: rgba(49, 163, 197, 0.9);
+}
+
+@media (max-width: 900px) {
+  .video-result-header {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+  .video-query-row,
+  .video-result-row {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .video-query-row,
+  .video-result-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 

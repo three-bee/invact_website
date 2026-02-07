@@ -50,31 +50,10 @@ const state = {
 
 const VIDEO_CONFIGS = [
   {
-    id: "seed7",
-    label: "Ego-Exo4D",
-    gallery: "video_gallery_seed7.json",
-    rankings: "video_rankings_seed7.json",
-  },
-  {
-    id: "ntu_seed7",
-    label: "NTU RGB+D",
-    tag: "Zeroshot",
-    gallery: "video_gallery_ntu_seed7.json",
-    rankings: "video_rankings_ntu_seed7.json",
-  },
-  {
-    id: "ssv2_seed23",
-    label: "SSV2",
-    tag: "Zeroshot",
-    gallery: "video_gallery_ssv2_seed23.json",
-    rankings: "video_rankings_ssv2_seed23.json",
-  },
-  {
-    id: "phyworld_seed10",
-    label: "PhyWorld",
-    tag: "Zeroshot",
-    gallery: "video_gallery_phyworld_seed10.json",
-    rankings: "video_rankings_phyworld_seed10.json",
+    id: "seed42_feb",
+    label: "Ego-Exo4D (Seed 42 Feb)",
+    gallery: "video_gallery_seed42_feb_trimmed.json",
+    rankings: "video_rankings_seed42_feb.json",
   },
 ];
 
@@ -87,6 +66,11 @@ const elements = {
   videoGalleryStatus: document.getElementById("videoGalleryStatus"),
   videoGalleryOverlay: document.getElementById("videoGalleryOverlay"),
   videoConfigTabs: document.getElementById("videoConfigTabs"),
+  videoQueryRow: document.getElementById("videoQueryRow"),
+  videoResultRow: document.getElementById("videoResultRow"),
+  videoShuffleBtn: document.getElementById("videoShuffleBtn"),
+  videoPrevBtn: document.getElementById("videoPrevBtn"),
+  videoNextBtn: document.getElementById("videoNextBtn"),
   controlFab: document.getElementById("controlFab"),
   controlMenu: document.getElementById("controlMenu"),
   viewToggle: document.getElementById("viewToggle"),
@@ -122,9 +106,12 @@ const elements = {
 
 const videoState = {
   items: [],
+  queries: [],
+  queryIds: [],
+  visibleQueries: [],
+  queryWindowStart: 0,
   ranking: {},
-  selectedId: null,
-  orderedIds: [],
+  activeQueryId: null,
   dataRoot: null,
   ready: false,
   overlayIntroShown: false,
@@ -1256,28 +1243,125 @@ function buildPlaceholderVideos(count = 12) {
   }));
 }
 
-function computeVideoOrder() {
-  const ids = videoState.items.map((item) => item.id);
-  if (!videoState.selectedId) {
-    videoState.orderedIds = ids;
+function pickRandomIds(ids, count) {
+  const pool = ids.slice();
+  const selected = [];
+  while (pool.length && selected.length < count) {
+    const idx = Math.floor(Math.random() * pool.length);
+    selected.push(pool.splice(idx, 1)[0]);
+  }
+  return selected;
+}
+
+function sortQueryIds(ids) {
+  return ids.slice().sort((a, b) => {
+    const ma = String(a).match(/query_(\d+)/i);
+    const mb = String(b).match(/query_(\d+)/i);
+    if (ma && mb) {
+      return Number(ma[1]) - Number(mb[1]);
+    }
+    return String(a).localeCompare(String(b));
+  });
+}
+
+function clampQueryWindowStart(start) {
+  const maxStart = Math.max(0, videoState.queryIds.length - 5);
+  const step = 5;
+  const snapped = Math.max(0, Math.min(maxStart, Math.floor(start / step) * step));
+  return snapped;
+}
+
+function updateQueryWindow(start) {
+  videoState.queryWindowStart = clampQueryWindowStart(start);
+  videoState.visibleQueries = [];
+  renderVideoGallery();
+}
+
+function updateQueryNavButtons() {
+  if (!elements.videoPrevBtn && !elements.videoNextBtn) return;
+  const maxStart = Math.max(0, videoState.queryIds.length - 5);
+  const atStart = videoState.queryWindowStart <= 0;
+  const atEnd = videoState.queryWindowStart >= maxStart;
+  if (elements.videoPrevBtn) {
+    elements.videoPrevBtn.disabled = atStart;
+  }
+  if (elements.videoNextBtn) {
+    elements.videoNextBtn.disabled = atEnd;
+  }
+}
+
+function shuffleVisibleQueries() {
+  const ids = videoState.queryIds;
+  if (!ids.length) return;
+  const count = Math.min(5, ids.length);
+  videoState.visibleQueries = pickRandomIds(ids, count);
+  if (!videoState.visibleQueries.includes(videoState.activeQueryId)) {
+    videoState.activeQueryId = videoState.visibleQueries[0];
+  }
+  renderVideoGallery();
+}
+
+function ensureQuerySelection() {
+  const ids = videoState.queryIds;
+  if (!ids.length) {
+    videoState.visibleQueries = [];
+    videoState.activeQueryId = null;
     return;
   }
-  const selected = videoState.selectedId;
-  const rankingList = videoState.ranking[selected] || [];
-  const ranked = rankingList.filter((id) => ids.includes(id) && id !== selected);
-  const remaining = ids.filter((id) => id !== selected && !ranked.includes(id));
-  videoState.orderedIds = [selected, ...ranked, ...remaining];
+  if (!videoState.visibleQueries.length) {
+    const start = clampQueryWindowStart(videoState.queryWindowStart);
+    videoState.queryWindowStart = start;
+    videoState.visibleQueries = ids.slice(start, start + 5);
+  }
+  if (!videoState.activeQueryId || !videoState.visibleQueries.includes(videoState.activeQueryId)) {
+    videoState.activeQueryId = videoState.visibleQueries[0];
+  }
+}
+
+function formatVideoTitle(item) {
+  if (!item) return "";
+  const displayVerbLabel =
+    (videoState.verbNameMap && item.verb_label && videoState.verbNameMap[item.verb_label]) ||
+    item.verb_label ||
+    "";
+  if (item.atomic_text && displayVerbLabel) {
+    const safeVerb = displayVerbLabel.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const regex = new RegExp(`\\b${safeVerb}\\b`, "i");
+    if (regex.test(item.atomic_text)) {
+      return item.atomic_text.replace(regex, (match) => `<strong>${match}</strong>`);
+    }
+    return `<strong>${displayVerbLabel}</strong> ${item.atomic_text}`;
+  }
+  if (item.atomic_text) {
+    return item.atomic_text;
+  }
+  if (displayVerbLabel) {
+    return displayVerbLabel;
+  }
+  return item.title || item.id || "";
+}
+
+function formatQueryBadge(id) {
+  if (!id) return "";
+  const match = String(id).match(/query_(\d+)/i);
+  if (match) {
+    return `Q${match[1]}`;
+  }
+  return String(id);
 }
 
 function renderVideoGallery() {
-  if (!elements.videoGallery) return;
-  clearNode(elements.videoGallery);
+  if (!elements.videoGallery || !elements.videoQueryRow || !elements.videoResultRow) return;
+  clearNode(elements.videoQueryRow);
+  clearNode(elements.videoResultRow);
+
   const overlay = elements.videoGalleryOverlay;
   const overlayLabel = overlay?.querySelector(".video-gallery-overlay-label");
   let pendingVideos = 0;
   let loadedVideos = 0;
   let totalVideos = 0;
   let overlayTimer = null;
+
   const showOverlay = () => {
     if (overlay) {
       overlay.classList.remove("hidden");
@@ -1292,69 +1376,98 @@ function renderVideoGallery() {
       overlayTimer = null;
     }
   };
-  const updateOverlay = () => {
-    if (overlayLabel) {
-      overlayLabel.textContent = "Loading videos…";
-    }
-  };
   const showIntroText = !videoState.overlayIntroShown;
   if (overlayLabel) {
     overlayLabel.classList.toggle("hidden", !showIntroText);
+    overlayLabel.textContent = "Loading videos…";
   }
   showOverlay();
   if (showIntroText) {
     videoState.overlayIntroShown = true;
   }
-  const lookup = new Map(videoState.items.map((item) => [item.id, item]));
-  computeVideoOrder();
-  totalVideos = videoState.orderedIds.reduce((acc, id) => {
-    const item = lookup.get(id);
-    return item && item.src ? acc + 1 : acc;
-  }, 0);
-  updateOverlay();
-  if (totalVideos === 0) {
-    hideOverlay();
-  } else {
-    overlayTimer = window.setTimeout(() => {
-      hideOverlay();
-    }, 8000);
-  }
-  const selectedItem = lookup.get(videoState.selectedId);
-  videoState.orderedIds.forEach((id, index) => {
-    const item = lookup.get(id);
-    if (!item) return;
-    const button = document.createElement("button");
-    button.type = "button";
-    button.className = "video-card";
-    if (videoState.selectedId === id) {
-      button.classList.add("selected");
-    } else if (
-      selectedItem &&
-      selectedItem.verb_label &&
-      item.verb_label &&
-      selectedItem.verb_label === item.verb_label
-    ) {
-      button.classList.add("verb-match");
-    }
-    button.addEventListener("click", () => {
-      if (videoState.selectedId === id) return;
-      videoState.selectedId = id;
-      renderVideoGallery();
+
+  const queryLookup = new Map(videoState.queries.map((item) => [item.id, item]));
+  const itemLookup = new Map(videoState.items.map((item) => [item.id, item]));
+  ensureQuerySelection();
+  updateQueryNavButtons();
+
+  const activeQuery = queryLookup.get(videoState.activeQueryId) || itemLookup.get(videoState.activeQueryId);
+  const activeVerb = activeQuery?.verb_label || "";
+
+  const registerVideo = (video, item) => {
+    totalVideos += 1;
+    let resolved = false;
+    let loadTimer = null;
+    const markLoaded = () => {
+      if (resolved) return;
+      resolved = true;
+      if (loadTimer) {
+        clearTimeout(loadTimer);
+        loadTimer = null;
+      }
+      pendingVideos = Math.max(0, pendingVideos - 1);
+      loadedVideos += 1;
+      if (loadedVideos >= totalVideos) {
+        hideOverlay();
+      }
+    };
+    loadTimer = window.setTimeout(markLoaded, 6000);
+      video.addEventListener("loadedmetadata", () => {
+        let start = Number(video.dataset.start || 0);
+        let end = Number(video.dataset.end || 0);
+        const duration = Number(video.duration || 0);
+        if (!Number.isFinite(duration) || duration <= 0) {
+          return;
+        }
+        if (!Number.isFinite(start) || start < 0) {
+          start = 0;
+        }
+        if (!Number.isFinite(end) || end <= 0 || end > duration) {
+          end = duration;
+        }
+        if (end - start < 0.2) {
+          start = 0;
+          end = duration;
+        }
+        video.dataset.start = String(start);
+        video.dataset.end = String(end);
+        const safeStart = Math.min(Math.max(start, 0), Math.max(0, duration - 0.03));
+        video.currentTime = safeStart;
+      });
+    video.addEventListener("loadeddata", markLoaded, { once: true });
+    video.addEventListener("canplay", markLoaded, { once: true });
+    video.addEventListener("error", markLoaded, { once: true });
+    video.addEventListener("stalled", markLoaded, { once: true });
+    requestAnimationFrame(() => {
+      if (video.readyState >= 2) {
+        markLoaded();
+      }
     });
+      video.addEventListener("timeupdate", () => {
+        const duration = Number(video.duration || 0);
+        if (!Number.isFinite(duration) || duration <= 0) {
+          return;
+        }
+        const start = Number(video.dataset.start || 0);
+        const end = Number(video.dataset.end || 0);
+        if (Number.isFinite(end) && end > 0 && end - start >= 0.2 && video.currentTime > end) {
+          video.currentTime = start;
+        }
+        if (Number.isFinite(start) && start >= 0 && video.currentTime < start) {
+          video.currentTime = start;
+        }
+      });
+  };
 
-    const rank = document.createElement("span");
-    rank.className = "video-card-rank";
-    rank.textContent = `#${index + 1}`;
-    button.appendChild(rank);
-
-    if (item.src) {
+  const attachMedia = (card, item) => {
+    if (item && item.src) {
       const video = document.createElement("video");
       video.className = "video-thumb";
       video.autoplay = true;
       video.muted = true;
       video.loop = true;
       video.playsInline = true;
-      video.preload = "metadata";
+      video.preload = "auto";
       if (item.start != null) {
         video.dataset.start = String(item.start);
       }
@@ -1362,85 +1475,94 @@ function renderVideoGallery() {
         video.dataset.end = String(item.end);
       }
       pendingVideos += 1;
-      let resolved = false;
-      let loadTimer = null;
-      const markLoaded = () => {
-        if (resolved) return;
-        resolved = true;
-        if (loadTimer) {
-          clearTimeout(loadTimer);
-          loadTimer = null;
-        }
-        pendingVideos -= 1;
-        loadedVideos += 1;
-        updateOverlay();
-        if (loadedVideos >= totalVideos) {
-          hideOverlay();
-        }
-      };
-      loadTimer = window.setTimeout(markLoaded, 5000);
-      video.addEventListener("loadedmetadata", () => {
-        const start = Number(video.dataset.start || 0);
-        if (!Number.isNaN(start)) {
-          video.currentTime = start;
-        }
-      });
-      video.addEventListener("loadeddata", markLoaded, { once: true });
-      video.addEventListener("canplay", markLoaded, { once: true });
-      video.addEventListener("error", markLoaded, { once: true });
-      video.addEventListener("stalled", markLoaded, { once: true });
-      requestAnimationFrame(() => {
-        if (video.readyState >= 2) {
-          markLoaded();
-        }
-      });
-      video.addEventListener("timeupdate", () => {
-        const start = Number(video.dataset.start || 0);
-        const end = Number(video.dataset.end || 0);
-        if (!Number.isNaN(end) && end > 0 && video.currentTime > end) {
-          video.currentTime = start;
-        }
-        if (!Number.isNaN(start) && video.currentTime < start) {
-          video.currentTime = start;
-        }
-      });
+      registerVideo(video, item);
       const source = document.createElement("source");
       source.src = item.src;
       source.type = "video/mp4";
       video.appendChild(source);
-      button.appendChild(video);
+      card.appendChild(video);
     } else {
       const placeholder = document.createElement("div");
       placeholder.className = "video-thumb placeholder";
       placeholder.textContent = "Add video";
-      button.appendChild(placeholder);
+      card.appendChild(placeholder);
     }
+  };
 
+  videoState.visibleQueries.forEach((id) => {
+    const item = queryLookup.get(id) || itemLookup.get(id);
+    if (!item) return;
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "video-card";
+    if (videoState.activeQueryId === id) {
+      button.classList.add("selected");
+    }
+    button.addEventListener("click", () => {
+      if (videoState.activeQueryId === id) return;
+      videoState.activeQueryId = id;
+      renderVideoGallery();
+    });
+
+    const badge = document.createElement("span");
+    badge.className = "video-card-rank video-card-query";
+    badge.textContent = formatQueryBadge(id);
+    button.appendChild(badge);
+
+    attachMedia(button, item);
     const title = document.createElement("div");
     title.className = "video-card-title";
-    const displayVerbLabel =
-      (videoState.verbNameMap && item.verb_label && videoState.verbNameMap[item.verb_label]) ||
-      item.verb_label ||
-      "";
-    if (item.atomic_text && displayVerbLabel) {
-      const safeVerb = displayVerbLabel.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-      const regex = new RegExp(`\\b${safeVerb}\\b`, "i");
-      if (regex.test(item.atomic_text)) {
-        title.innerHTML = item.atomic_text.replace(regex, (match) => `<strong>${match}</strong>`);
-      } else {
-        title.innerHTML = `<strong>${displayVerbLabel}</strong> ${item.atomic_text}`;
-      }
-    } else if (item.atomic_text) {
-      title.textContent = item.atomic_text;
-    } else if (displayVerbLabel) {
-      title.textContent = displayVerbLabel;
-    } else {
-      title.textContent = item.title || item.id || "";
-    }
+    title.innerHTML = formatVideoTitle(item);
     button.appendChild(title);
-
-    elements.videoGallery.appendChild(button);
+    elements.videoQueryRow.appendChild(button);
   });
+
+  const rankingList = (videoState.ranking && videoState.ranking[videoState.activeQueryId]) || [];
+  const topList = rankingList.slice(0, 5);
+
+  if (activeQuery) {
+    const queryCard = document.createElement("div");
+    queryCard.className = "video-card selected";
+    const badge = document.createElement("span");
+    badge.className = "video-card-rank video-card-query";
+    badge.textContent = formatQueryBadge(activeQuery.id);
+    queryCard.appendChild(badge);
+    attachMedia(queryCard, activeQuery);
+    const title = document.createElement("div");
+    title.className = "video-card-title";
+    title.innerHTML = formatVideoTitle(activeQuery);
+    queryCard.appendChild(title);
+    elements.videoResultRow.appendChild(queryCard);
+  }
+
+  topList.forEach((id, index) => {
+    const key = typeof id === "string" ? id : String(id);
+    const item = itemLookup.get(key);
+    if (!item) return;
+    const card = document.createElement("div");
+    card.className = "video-card";
+    if (activeVerb && item.verb_label && activeVerb === item.verb_label) {
+      card.classList.add("verb-match");
+    }
+    const rank = document.createElement("span");
+    rank.className = "video-card-rank";
+    rank.textContent = `#${index + 1}`;
+    card.appendChild(rank);
+    attachMedia(card, item);
+    const title = document.createElement("div");
+    title.className = "video-card-title";
+    title.innerHTML = formatVideoTitle(item);
+    card.appendChild(title);
+    elements.videoResultRow.appendChild(card);
+  });
+
+  if (overlay && totalVideos === 0) {
+    hideOverlay();
+  } else if (overlay) {
+    overlayTimer = window.setTimeout(() => {
+      hideOverlay();
+    }, 8000);
+  }
   if (overlay && pendingVideos <= 0 && loadedVideos >= totalVideos) {
     hideOverlay();
   }
@@ -1450,6 +1572,21 @@ async function initVideoGallery() {
   if (!elements.videoGallery) return;
   videoState.configs = VIDEO_CONFIGS.slice();
   renderVideoConfigTabs();
+  if (elements.videoShuffleBtn) {
+    elements.videoShuffleBtn.addEventListener("click", () => {
+      shuffleVisibleQueries();
+    });
+  }
+  if (elements.videoPrevBtn) {
+    elements.videoPrevBtn.addEventListener("click", () => {
+      updateQueryWindow(videoState.queryWindowStart - 5);
+    });
+  }
+  if (elements.videoNextBtn) {
+    elements.videoNextBtn.addEventListener("click", () => {
+      updateQueryWindow(videoState.queryWindowStart + 5);
+    });
+  }
   const initial = videoState.configs[0] || { id: "default" };
   await applyVideoConfig(initial.id);
   videoState.ready = true;
@@ -1492,19 +1629,30 @@ async function applyVideoConfig(configId) {
   videoState.verbNameMap = await loadVerbNameMap(root, config);
   if (!payload || !payload.videos || payload.videos.length === 0) {
     videoState.items = buildPlaceholderVideos(12);
+    videoState.queries = videoState.items.slice();
     if (elements.videoGalleryStatus) {
       elements.videoGalleryStatus.textContent = `Add data/${fileName} to populate the video gallery.`;
       elements.videoGalleryStatus.classList.remove("hidden");
     }
   } else {
     videoState.items = payload.videos;
+    videoState.queries = (payload.queries && payload.queries.length ? payload.queries : payload.videos);
     if (elements.videoGalleryStatus) {
       elements.videoGalleryStatus.classList.add("hidden");
     }
   }
   videoState.ranking = await loadVideoRankings(root, config);
-  const defaultId = payload?.default || videoState.items[0]?.id;
-  videoState.selectedId = defaultId || null;
+  videoState.queryIds = sortQueryIds(videoState.queries.map((item) => item.id));
+  videoState.queryWindowStart = 0;
+  const defaultId = payload?.default_query || payload?.default || videoState.queryIds[0];
+  const initialCount = Math.min(5, videoState.queryIds.length);
+  if (initialCount > 0) {
+    videoState.visibleQueries = pickRandomIds(videoState.queryIds, initialCount);
+    videoState.activeQueryId = videoState.visibleQueries[0] || defaultId || null;
+  } else {
+    videoState.visibleQueries = [];
+    videoState.activeQueryId = defaultId || null;
+  }
   renderVideoGallery();
 }
 

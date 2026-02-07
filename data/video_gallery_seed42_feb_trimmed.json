@@ -1,0 +1,4777 @@
+{
+  "default_query": "query_05",
+  "queries": [
+    {
+      "id": "query_05",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_05.mp4",
+      "verb_label": "place",
+      "atomic_text": "places the collection swab in both hands in the test kit on the table",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "query_07",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_07.mp4",
+      "verb_label": "hold",
+      "atomic_text": "holds the test cassette pack with his hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_08",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_08.mp4",
+      "verb_label": "unfold",
+      "atomic_text": "unfolds the instruction manual with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_10",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_10.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks the testing plate pack from the table",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_11",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_11.mp4",
+      "verb_label": "open",
+      "atomic_text": "opens the covid-19 test kit in his left hand with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_13",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_13.mp4",
+      "verb_label": "unfold",
+      "atomic_text": "unfolds the covid-19 instruction manual with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_15",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_15.mp4",
+      "verb_label": "read",
+      "atomic_text": "reads the test manual on the table",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "query_22",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_22.mp4",
+      "verb_label": "hold",
+      "atomic_text": "holds the wheel with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_23",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_23.mp4",
+      "verb_label": "hold",
+      "atomic_text": "holds a wrench with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_28",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_28.mp4",
+      "verb_label": "compress",
+      "atomic_text": "compresses the CPR mannequin\u2019s chest with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "query_29",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_29.mp4",
+      "verb_label": "compress",
+      "atomic_text": "compresses the CPR mannequin\u2019s chest with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_30",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_30.mp4",
+      "verb_label": "compress",
+      "atomic_text": "compresses the CPR mannequin\u2019s chest with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "query_32",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_32.mp4",
+      "verb_label": "cut",
+      "atomic_text": "cuts the halved peeled cucumber on the cutting board with the knife in her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_35",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_35.mp4",
+      "verb_label": "slice",
+      "atomic_text": "slices the tomato with the knife in his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_36",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_36.mp4",
+      "verb_label": "add",
+      "atomic_text": "adds the cut tomato to the bowl of salad mixture with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_38",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_38.mp4",
+      "verb_label": "open",
+      "atomic_text": "opens the fridge with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_40",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_40.mp4",
+      "verb_label": "cut",
+      "atomic_text": "cuts the peeled cucumber on the cutting board with the knife in her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_41",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_41.mp4",
+      "verb_label": "open",
+      "atomic_text": "opens the refrigerator",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_42",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_42.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks chooping sticks from the counter top",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "query_43",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_43.mp4",
+      "verb_label": "place",
+      "atomic_text": "places the frying pan on the burner",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "query_46",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_46.mp4",
+      "verb_label": "wash",
+      "atomic_text": "washes her right hand in the sink",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_47",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_47.mp4",
+      "verb_label": "add",
+      "atomic_text": "adds salt into the mixing bowl from the salt container in her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_49",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_49.mp4",
+      "verb_label": "pour",
+      "atomic_text": "pours the egg mixture into the pan",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "query_50",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_50.mp4",
+      "verb_label": "pour",
+      "atomic_text": "pours an oil into the skillet with a spoon in his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_53",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_53.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a spoon ladle from the rack",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "query_54",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_54.mp4",
+      "verb_label": "open",
+      "atomic_text": "opens the refrigerator door with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_55",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_55.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a pepper container from the hanging shelf with her left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_56",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_56.mp4",
+      "verb_label": "open",
+      "atomic_text": "opens a cupboard with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "query_57",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_57.mp4",
+      "verb_label": "open",
+      "atomic_text": "opens a drawer with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_58",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_58.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a seasoning powder container from the countertop with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_60",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_60.mp4",
+      "verb_label": "close",
+      "atomic_text": "closes the drawer with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_61",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_61.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a plate from the countertop with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "query_62",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_62.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a chilli pepper jar from a shelf with her left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_64",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_64.mp4",
+      "verb_label": "cut",
+      "atomic_text": "cuts the green beans into smaller pieces the knife in her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_65",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_65.mp4",
+      "verb_label": "drop",
+      "atomic_text": "drops the eggshell in the waste bin with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_66",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_66.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks the vegetable oil container on the countertop with her left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "query_67",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_67.mp4",
+      "verb_label": "open",
+      "atomic_text": "opens the fridge with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "query_70",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_70.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a bowl",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "query_71",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_71.mp4",
+      "verb_label": "pour",
+      "atomic_text": "pours the cracked egg into a bowl",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_74",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_74.mp4",
+      "verb_label": "wash",
+      "atomic_text": "washes his hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_77",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_77.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a spoon from the kitchen steel rack with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_78",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_78.mp4",
+      "verb_label": "place",
+      "atomic_text": "places saucepan under running water to fetch water",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "query_80",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_80.mp4",
+      "verb_label": "place",
+      "atomic_text": "places the milk container on the countertop",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "query_81",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_81.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a mug from the window top with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_85",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_85.mp4",
+      "verb_label": "cut",
+      "atomic_text": "cuts the garlic clove on the cutting board with a knife in his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_87",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_87.mp4",
+      "verb_label": "peel",
+      "atomic_text": "peels the outer skin of the garlic with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_93",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_93.mp4",
+      "verb_label": "add",
+      "atomic_text": "adds honey into the spoon in his left hand from the bottle of honey in his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_95",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_95.mp4",
+      "verb_label": "wash",
+      "atomic_text": "washes the red pepper in her both hands with water",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "query_96",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_96.mp4",
+      "verb_label": "cut",
+      "atomic_text": "cuts cilantro on the cutting board with the knife in his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_97",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_97.mp4",
+      "verb_label": "cut",
+      "atomic_text": "cuts cilantro on the cutting board with the knife in his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_98",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_98.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a celery from the countertop with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_99",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_99.mp4",
+      "verb_label": "cut",
+      "atomic_text": "cuts onion on the cutting board with the knife in his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_100",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_100.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a black bowl from the dishwasher with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_102",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_102.mp4",
+      "verb_label": "rinse",
+      "atomic_text": "rinses the tomato under running water with her hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_104",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_104.mp4",
+      "verb_label": "stir",
+      "atomic_text": "stirs the mix of ingredients in the sauce pan with the spatula in her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "query_106",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_106.mp4",
+      "verb_label": "dice",
+      "atomic_text": "dices the tomato on the chopping board with the knife in her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_107",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_107.mp4",
+      "verb_label": "dice",
+      "atomic_text": "dices the tomato on the chopping board with the knife in her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_108",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_108.mp4",
+      "verb_label": "stir",
+      "atomic_text": "stirs the egg in the skillet with the spatula in her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "query_109",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_109.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks the vegetable oil container from the countertop with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "query_111",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_111.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks an egg from the chopping board",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_112",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_112.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks an egg from the chopping board",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "query_113",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_113.mp4",
+      "verb_label": "add",
+      "atomic_text": "adds salt to the recipe",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_114",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_114.mp4",
+      "verb_label": "pour",
+      "atomic_text": "pours egg into the skillet",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "query_116",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_116.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks the salt container on the kitchen countertop with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_117",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_117.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks the salt container on the kitchen countertop with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "query_119",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_119.mp4",
+      "verb_label": "cut",
+      "atomic_text": "cuts the tomato in his left hand with the knife in his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "query_120",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_120.mp4",
+      "verb_label": "slice",
+      "atomic_text": "slices the tomato on the chopping board with the knife in his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_121",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_121.mp4",
+      "verb_label": "slice",
+      "atomic_text": "slices the tomato on the chopping board with the knife in his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_125",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_125.mp4",
+      "verb_label": "place",
+      "atomic_text": "places the sugar container on the countertop with her left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_126",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_126.mp4",
+      "verb_label": "hold",
+      "atomic_text": "holds measuring spoons with her left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_127",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_127.mp4",
+      "verb_label": "scoop",
+      "atomic_text": "scoops sugar from a container with a measuring spoon in her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_128",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_128.mp4",
+      "verb_label": "place",
+      "atomic_text": "places a container in the cabinet with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "query_129",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_129.mp4",
+      "verb_label": "open",
+      "atomic_text": "opens a jar of cinnamon sticks with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_130",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_130.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a jar of sugar from the countertop with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "query_133",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_133.mp4",
+      "verb_label": "place",
+      "atomic_text": "places the jar of sugar on the countertop",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "query_134",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_134.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks the jar of sugar with her left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "query_135",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_135.mp4",
+      "verb_label": "open",
+      "atomic_text": "opens a fridge with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_136",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_136.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a pack of milk from the fridge with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_138",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_138.mp4",
+      "verb_label": "pour",
+      "atomic_text": "pours the chai tea from the saucepan into the mug cup with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_139",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_139.mp4",
+      "verb_label": "peel",
+      "atomic_text": "peels the garlic clove with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_140",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_140.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a blue plate from the counter top with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "query_142",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_142.mp4",
+      "verb_label": "pour",
+      "atomic_text": "pours salt into the pot with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_152",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_152.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks the steel plate in the kitchen cabinet with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "query_153",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_153.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks the spatula from the wall dish rack with her left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "query_154",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_154.mp4",
+      "verb_label": "press",
+      "atomic_text": "presses the chest of the CPR mannequin with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_155",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_155.mp4",
+      "verb_label": "press",
+      "atomic_text": "presses the chest of the CPR mannequin with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_156",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_156.mp4",
+      "verb_label": "press",
+      "atomic_text": "presses the chest of the mannequin with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "query_157",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_157.mp4",
+      "verb_label": "hold",
+      "atomic_text": "holds the waste bag with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_158",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_158.mp4",
+      "verb_label": "compress",
+      "atomic_text": "compresses the mannequin's chest with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "query_159",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_159.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks the cheese from the countertop with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "query_160",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_160.mp4",
+      "verb_label": "pour",
+      "atomic_text": "pours the egg yolk into the steel bowl with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_162",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_162.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks green chili pepper from a bowl on the countertop with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_163",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_163.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a spoon from the kitchen drawer with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "query_164",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_164.mp4",
+      "verb_label": "open",
+      "atomic_text": "opens the kitchen cabinet with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_165",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_165.mp4",
+      "verb_label": "open",
+      "atomic_text": "opens the refrigerator door with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_169",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_169.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a bowl from the cabinet with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_172",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_172.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a sliced tomato from the cutting board with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_173",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_173.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a dish from a dish rack with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_174",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_174.mp4",
+      "verb_label": "open",
+      "atomic_text": "opens a refrigerator door with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_178",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_178.mp4",
+      "verb_label": "press",
+      "atomic_text": "presses the chest of the CPR manikin with her both hands",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "query_180",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_180.mp4",
+      "verb_label": "press",
+      "atomic_text": "presses the tire with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "query_181",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_181.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks an adjustable wrench from the work table with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "query_182",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_182.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks the valve tool from the toolbox on the table with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "query_183",
+      "src": "data/videos_seed42_feb_trimmed/queries/query_183.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks an egg from the egg carton on the countertop with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    }
+  ],
+  "videos": [
+    {
+      "id": "eval_08928_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08928_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a plate from the cabinet with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_01323_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_01323_ego.mp4",
+      "verb_label": "unfold",
+      "atomic_text": "unfolds the test instructions with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_00928_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_00928_ego.mp4",
+      "verb_label": "unfold",
+      "atomic_text": "unfolds the instruction manual with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_01219_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_01219_ego.mp4",
+      "verb_label": "unfold",
+      "atomic_text": "unfolds the test manual with his hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_07084_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07084_ego.mp4",
+      "verb_label": "fold",
+      "atomic_text": "folds the instruction manual on the table with his hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_06222_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06222_exo.mp4",
+      "verb_label": "place",
+      "atomic_text": "places her left hand on the paper recipe on a counter top",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_01098_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_01098_exo.mp4",
+      "verb_label": "place",
+      "atomic_text": "places the test tube rack in the covid antigen pack with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_00905_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_00905_exo.mp4",
+      "verb_label": "add",
+      "atomic_text": "adds the test tube to the testing plate pack",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_01349_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_01349_exo.mp4",
+      "verb_label": "place",
+      "atomic_text": "places the sterile swab and the sterile swab package in his left hand with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_07087_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07087_exo.mp4",
+      "verb_label": "hold",
+      "atomic_text": "holds the test plate on the table with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_07575_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07575_ego.mp4",
+      "verb_label": "hold",
+      "atomic_text": "holds the zip lock bag with his both hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_08000_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08000_ego.mp4",
+      "verb_label": "open",
+      "atomic_text": "opens the covid 19 test tube pack with both hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_02172_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_02172_ego.mp4",
+      "verb_label": "hold",
+      "atomic_text": "holds the covid-19 testing tube with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_01085_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_01085_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks the test tube from the test tube rack with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_07367_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07367_ego.mp4",
+      "verb_label": "hold",
+      "atomic_text": "holds the solution tube with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_00875_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_00875_ego.mp4",
+      "verb_label": "unfold",
+      "atomic_text": "unfolds the instruction manual",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_01325_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_01325_ego.mp4",
+      "verb_label": "move",
+      "atomic_text": "moves the sachet on the table with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_08145_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08145_ego.mp4",
+      "verb_label": "hold",
+      "atomic_text": "holds the drug leaflet with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_00233_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_00233_ego.mp4",
+      "verb_label": "close",
+      "atomic_text": "closes the extraction buffer sachet with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_01999_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_01999_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks the test tube pack from the instruction manual paper with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_00973_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_00973_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks the covid card from the table with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_01212_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_01212_ego.mp4",
+      "verb_label": "put",
+      "atomic_text": "puts the seal in a packet with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_00437_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_00437_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks the tube rack from the box",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_00391_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_00391_ego.mp4",
+      "verb_label": "adjust",
+      "atomic_text": "adjust the test packs on the table with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_00218_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_00218_ego.mp4",
+      "verb_label": "open",
+      "atomic_text": "opens the test box with her right and",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_01868_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_01868_ego.mp4",
+      "verb_label": "open",
+      "atomic_text": "opens the lid of the test tube with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_00004_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_00004_ego.mp4",
+      "verb_label": "place",
+      "atomic_text": "places the test strip sachet on the table with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_01720_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_01720_ego.mp4",
+      "verb_label": "unscrew",
+      "atomic_text": "unscrews the solution tube cover with both his hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_01469_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_01469_ego.mp4",
+      "verb_label": "open",
+      "atomic_text": "opens the covid test pack with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_00587_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_00587_ego.mp4",
+      "verb_label": "flip",
+      "atomic_text": "flips the instruction manual with his hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_00827_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_00827_ego.mp4",
+      "verb_label": "unfold",
+      "atomic_text": "unfolds the instruction manual with his hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_05451_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05451_exo.mp4",
+      "verb_label": "read",
+      "atomic_text": "reads the recipe paper on the island",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_07461_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07461_exo.mp4",
+      "verb_label": "read",
+      "atomic_text": "reads instructions from the manual on the table",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_00183_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_00183_exo.mp4",
+      "verb_label": "drop",
+      "atomic_text": "drops the nasal swab sachet on the table with her left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_05584_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05584_exo.mp4",
+      "verb_label": "turn off",
+      "atomic_text": "turns off the tap with her left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_00282_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_00282_exo.mp4",
+      "verb_label": "read",
+      "atomic_text": "reads the instruction from the instruction leaflet on the table",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_08546_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08546_ego.mp4",
+      "verb_label": "hold",
+      "atomic_text": "holds the tire with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_03036_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03036_ego.mp4",
+      "verb_label": "hold",
+      "atomic_text": "holds the container of black ground pepper with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_08536_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08536_ego.mp4",
+      "verb_label": "tighten",
+      "atomic_text": "tightens the axle nut on the wheel axle with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_05154_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05154_ego.mp4",
+      "verb_label": "hold",
+      "atomic_text": "holds the garlic with her both hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_01955_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_01955_ego.mp4",
+      "verb_label": "hold",
+      "atomic_text": "holds the test card on the table with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_03647_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03647_ego.mp4",
+      "verb_label": "get",
+      "atomic_text": "gets butter from the butter pack on the countertop with the table knife in her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04466_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04466_ego.mp4",
+      "verb_label": "hold",
+      "atomic_text": "holds the cinnamon pack with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_08760_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08760_ego.mp4",
+      "verb_label": "hold",
+      "atomic_text": "holds the pedal of the bike with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_06381_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06381_ego.mp4",
+      "verb_label": "open",
+      "atomic_text": "opens the pack of sugar on the counter top with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_07668_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07668_exo.mp4",
+      "verb_label": "compress",
+      "atomic_text": "compresses the CPR mannequin's chest with his hands",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_07671_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07671_exo.mp4",
+      "verb_label": "compress",
+      "atomic_text": "compresses the CPR mannequin's chest with his hands",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_07751_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07751_exo.mp4",
+      "verb_label": "compress",
+      "atomic_text": "compresses the manikin's chest with his interlocked hands",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_07304_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07304_exo.mp4",
+      "verb_label": "compress",
+      "atomic_text": "compresses the chest of the patient with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_02930_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_02930_exo.mp4",
+      "verb_label": "compress",
+      "atomic_text": "compresses the CPR mannequin's chest with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_02930_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_02930_ego.mp4",
+      "verb_label": "compress",
+      "atomic_text": "compresses the CPR mannequin's chest with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_02932_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_02932_ego.mp4",
+      "verb_label": "compress",
+      "atomic_text": "compresses the CPR mannequin's chest with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_08277_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08277_ego.mp4",
+      "verb_label": "press",
+      "atomic_text": "presses the chest of the CPR manikin with her both hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_08046_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08046_exo.mp4",
+      "verb_label": "compress",
+      "atomic_text": "compresses the CPR mannequin\u2019s chest with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_08279_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08279_exo.mp4",
+      "verb_label": "press",
+      "atomic_text": "presses the chest of the CPR manikin with her both hands",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_07259_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07259_exo.mp4",
+      "verb_label": "press",
+      "atomic_text": "presses the chest of the mannequin with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_02932_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_02932_exo.mp4",
+      "verb_label": "compress",
+      "atomic_text": "compresses the CPR mannequin's chest with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_02375_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_02375_exo.mp4",
+      "verb_label": "connect",
+      "atomic_text": "connects the pump valve to the bike tube valve with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_05098_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05098_ego.mp4",
+      "verb_label": "slice",
+      "atomic_text": "slices the portion of onions on the chopping board with the knife in his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04799_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04799_ego.mp4",
+      "verb_label": "cut",
+      "atomic_text": "cuts the onion on the cutting board with a knife in his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_05076_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05076_ego.mp4",
+      "verb_label": "slice",
+      "atomic_text": "slices the bunch of cilantro on the chopping board with the knife in his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04780_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04780_ego.mp4",
+      "verb_label": "cut",
+      "atomic_text": "cuts the red bell pepper on the cutting board with a knife in his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_05065_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05065_ego.mp4",
+      "verb_label": "slice",
+      "atomic_text": "slices the garlic on the chopping board with the knife in his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04991_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04991_ego.mp4",
+      "verb_label": "cut",
+      "atomic_text": "cuts the bell pepper into smaller pieces using a knife on the cutting board",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_07677_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07677_ego.mp4",
+      "verb_label": "cut",
+      "atomic_text": "cuts the cucumber slice with the knife in her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04826_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04826_ego.mp4",
+      "verb_label": "cut",
+      "atomic_text": "cuts the garlic clove on the cutting board with a knife in his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_05016_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05016_ego.mp4",
+      "verb_label": "cut",
+      "atomic_text": "cuts the onion into smaller pieces using a knife on the cutting board",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_07746_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07746_ego.mp4",
+      "verb_label": "cut",
+      "atomic_text": "cuts the tomato pieces on the cutting board with the knife in her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_05081_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05081_ego.mp4",
+      "verb_label": "slice",
+      "atomic_text": "slices the celery on the chopping board with the knife in his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_06790_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06790_ego.mp4",
+      "verb_label": "chop",
+      "atomic_text": "chops the green onions with a knife in her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_05606_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05606_ego.mp4",
+      "verb_label": "dice",
+      "atomic_text": "dices the sliced tomato on the chopping board with the knife in her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_05123_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05123_ego.mp4",
+      "verb_label": "add",
+      "atomic_text": "adds soy sauce from the soy sauce bottle in his right hand into the spoon in his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_07486_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07486_ego.mp4",
+      "verb_label": "slice",
+      "atomic_text": "slices the tomato on the chopping board with the knife in his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_05114_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05114_ego.mp4",
+      "verb_label": "add",
+      "atomic_text": "adds lemon from the lemon bottle in his right hand into the spoon in his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04846_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04846_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a bottle of honey from the countertop with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_05100_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05100_ego.mp4",
+      "verb_label": "add",
+      "atomic_text": "adds the onion slices into the chopping board with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_03331_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03331_ego.mp4",
+      "verb_label": "open",
+      "atomic_text": "opens the refrigerator",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_06363_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06363_ego.mp4",
+      "verb_label": "open",
+      "atomic_text": "opens a fridge with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_08249_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08249_ego.mp4",
+      "verb_label": "open",
+      "atomic_text": "opens a refrigerator door with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04338_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04338_ego.mp4",
+      "verb_label": "pick up",
+      "atomic_text": "picks up nylon from the fridge",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_05826_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05826_ego.mp4",
+      "verb_label": "remove",
+      "atomic_text": "remove eggs from the fridge",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_07712_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07712_ego.mp4",
+      "verb_label": "cut",
+      "atomic_text": "cuts the cucumber pieces with the knife in her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_07688_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07688_ego.mp4",
+      "verb_label": "cut",
+      "atomic_text": "cuts the cucumber pieces with the knife in her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04822_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04822_ego.mp4",
+      "verb_label": "cut",
+      "atomic_text": "cuts the garlic clove on the cutting board with a knife in his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_08787_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08787_ego.mp4",
+      "verb_label": "open",
+      "atomic_text": "opens the refrigerator door with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04135_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04135_ego.mp4",
+      "verb_label": "open",
+      "atomic_text": "opens the refrigerator door with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_03299_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03299_ego.mp4",
+      "verb_label": "remove",
+      "atomic_text": "removes his right hand from the fridge door",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_03166_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03166_ego.mp4",
+      "verb_label": "open",
+      "atomic_text": "opens the fridge with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_06323_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06323_exo.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a jar of sugar from the countertop with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_03822_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03822_exo.mp4",
+      "verb_label": "pick up",
+      "atomic_text": "picks up a jar of salt with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_07874_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07874_exo.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a spoon from the cup on the countertop with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_03828_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03828_exo.mp4",
+      "verb_label": "take",
+      "atomic_text": "takes a spoon with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_06225_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06225_exo.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a measuring spoon from a counter top with her left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_05598_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05598_exo.mp4",
+      "verb_label": "place",
+      "atomic_text": "places the skillet on the stove top with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_05762_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05762_exo.mp4",
+      "verb_label": "place",
+      "atomic_text": "places the skillet on the electric cooker with her left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_08854_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08854_exo.mp4",
+      "verb_label": "add",
+      "atomic_text": "adds oil to the frying pan on the gas cooker from the oil bottle in his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_06769_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06769_exo.mp4",
+      "verb_label": "move",
+      "atomic_text": "moves the lid on the gas burner with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_05676_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05676_exo.mp4",
+      "verb_label": "place",
+      "atomic_text": "places the plate on the countertop with her left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_04386_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04386_ego.mp4",
+      "verb_label": "wash",
+      "atomic_text": "washes his hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_03280_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03280_ego.mp4",
+      "verb_label": "wash",
+      "atomic_text": "washes both hands under running water",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_05652_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05652_ego.mp4",
+      "verb_label": "wash",
+      "atomic_text": "washes the measuring cup under running water with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_06686_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06686_ego.mp4",
+      "verb_label": "fetch",
+      "atomic_text": "fetches water from the tap with a pot in her left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_05653_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05653_ego.mp4",
+      "verb_label": "pour",
+      "atomic_text": "pours the water from the measuring cup into the sink with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_03245_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03245_ego.mp4",
+      "verb_label": "add",
+      "atomic_text": "adds oil to mixture",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_03077_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03077_ego.mp4",
+      "verb_label": "add",
+      "atomic_text": "adds wine to the bowl from the wine bottle in his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_03071_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03071_ego.mp4",
+      "verb_label": "sprinkle",
+      "atomic_text": "sprinkles salt in the bowl from the salt container in his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_03015_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03015_ego.mp4",
+      "verb_label": "add",
+      "atomic_text": "adds salt from its container into the small bowl with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04144_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04144_ego.mp4",
+      "verb_label": "scoop",
+      "atomic_text": "scoops chilli pepper from the chilli pepper jar with a spoon in her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_06324_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06324_exo.mp4",
+      "verb_label": "pour",
+      "atomic_text": "pours sugar on a measuring spoon with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_05593_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05593_exo.mp4",
+      "verb_label": "transfer",
+      "atomic_text": "transfers the oil bottle from her left hand to her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_06326_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06326_exo.mp4",
+      "verb_label": "pour",
+      "atomic_text": "pours sugar on a measuring spoon with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_05811_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05811_exo.mp4",
+      "verb_label": "gather",
+      "atomic_text": "gathers the egg mix in the skillet with the spatula in her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_06325_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06325_exo.mp4",
+      "verb_label": "pour",
+      "atomic_text": "pours sugar into the tea in the saucepan with a measuring spoon",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_08083_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08083_ego.mp4",
+      "verb_label": "pour",
+      "atomic_text": "pours the egg from the bowl into the skillet with her left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_06698_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06698_ego.mp4",
+      "verb_label": "pour",
+      "atomic_text": "pours honey from the bottle into the spoon with her left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_05685_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05685_ego.mp4",
+      "verb_label": "open",
+      "atomic_text": "opens the sugar container with her left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_05842_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05842_ego.mp4",
+      "verb_label": "close",
+      "atomic_text": "closes the bottle of oil",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_06716_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06716_ego.mp4",
+      "verb_label": "pour",
+      "atomic_text": "pours jam into the bowl with a spoon in her left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_02524_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_02524_exo.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks the air pump inflator from the floor with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_04100_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04100_exo.mp4",
+      "verb_label": "close",
+      "atomic_text": "closes the drawer with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_04104_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04104_exo.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks the fork from the mug on the countertop with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_06564_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06564_exo.mp4",
+      "verb_label": "rub",
+      "atomic_text": "rubs both palms together",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_03016_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03016_exo.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a spoon from the cabinet with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_08048_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08048_ego.mp4",
+      "verb_label": "open",
+      "atomic_text": "opens the refrigerator door with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_08852_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08852_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks an oil bottle from the cabinet with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_08777_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08777_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a red chili powder container from the cabinet with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_06378_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06378_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a pack of sugar from the shelf with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_03285_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03285_ego.mp4",
+      "verb_label": "pick up",
+      "atomic_text": "picks up the salt from the cabinet",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_08944_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08944_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a spice container from the cabinet with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04224_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04224_exo.mp4",
+      "verb_label": "open",
+      "atomic_text": "opens the fridge with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_08638_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08638_exo.mp4",
+      "verb_label": "close",
+      "atomic_text": "closes the door of the cabinet with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_07479_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07479_exo.mp4",
+      "verb_label": "open",
+      "atomic_text": "opens a refrigerator with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_07825_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07825_exo.mp4",
+      "verb_label": "open",
+      "atomic_text": "opens the kitchen drawer with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_07840_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07840_exo.mp4",
+      "verb_label": "open",
+      "atomic_text": "opens the kitchen cabinet door with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_08954_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08954_ego.mp4",
+      "verb_label": "place",
+      "atomic_text": "places the spice container on the cabinet with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_08779_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08779_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a black pepper powder container from the cabinet net with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_08781_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08781_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a salt container from the cabinet with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_08826_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08826_ego.mp4",
+      "verb_label": "close",
+      "atomic_text": "closes the cabinet door with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_05045_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05045_ego.mp4",
+      "verb_label": "hold",
+      "atomic_text": "holds a pack of carrot on the countertop with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04484_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04484_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a pack of milk from the countertop with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_03915_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03915_ego.mp4",
+      "verb_label": "close",
+      "atomic_text": "closes the fridge",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_03195_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03195_ego.mp4",
+      "verb_label": "close",
+      "atomic_text": "closes the garbage bin with her right leg",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_03170_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03170_ego.mp4",
+      "verb_label": "close",
+      "atomic_text": "closes the fridge with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_08930_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08930_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a spatula from the countertop with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04226_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04226_ego.mp4",
+      "verb_label": "close",
+      "atomic_text": "closes the bag of green chili pepper with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_08054_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08054_exo.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a knife from the cabinet drawer with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_07268_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07268_exo.mp4",
+      "verb_label": "pick up",
+      "atomic_text": "picks up a pot from the bottom cabinet with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_03745_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03745_exo.mp4",
+      "verb_label": "take",
+      "atomic_text": "takes the plate with scrambled egg from the countertop with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_03135_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03135_exo.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks cutter from the countertop",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_07754_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07754_exo.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a coffee maker from the countertop with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_07887_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07887_ego.mp4",
+      "verb_label": "touch",
+      "atomic_text": "touches the chopping boards in the shelf with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_07919_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07919_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks the fork from the utensil tray in the shelf with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04827_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04827_ego.mp4",
+      "verb_label": "peel",
+      "atomic_text": "peels the garlic clove flesh from the garlic clove with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_07681_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07681_ego.mp4",
+      "verb_label": "cut",
+      "atomic_text": "cuts the cucumber pieces with the knife in her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_05728_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05728_ego.mp4",
+      "verb_label": "dice",
+      "atomic_text": "dices the tomato on the chopping board with the knife in her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_07682_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07682_ego.mp4",
+      "verb_label": "cut",
+      "atomic_text": "cuts the cucumber slice with the knife in her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_08827_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08827_ego.mp4",
+      "verb_label": "drop",
+      "atomic_text": "drops the sheet of paper towel in the plastic bin on the floor with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_06410_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06410_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks the stainless fork from the counter top with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04098_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04098_exo.mp4",
+      "verb_label": "drop",
+      "atomic_text": "drops the fork into the mug with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_04352_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04352_ego.mp4",
+      "verb_label": "drop",
+      "atomic_text": "drops the knife on the chopping board",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_03101_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03101_ego.mp4",
+      "verb_label": "pick up",
+      "atomic_text": "picks up a pack of tomato",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_06531_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06531_exo.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks the knife containing the chopped vegetables with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_08056_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08056_exo.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a spatula from the cutlery holder with her left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_03097_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03097_exo.mp4",
+      "verb_label": "pick up",
+      "atomic_text": "picks up second half of the cucumber",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_06513_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06513_exo.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a blue plate from the counter top with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_06457_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06457_exo.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks the non stick pot glass lid with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_04052_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04052_exo.mp4",
+      "verb_label": "open",
+      "atomic_text": "opens a cupboard with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_04379_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04379_exo.mp4",
+      "verb_label": "pick up",
+      "atomic_text": "picks up the oil container",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_08249_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08249_exo.mp4",
+      "verb_label": "open",
+      "atomic_text": "opens a refrigerator door with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_08955_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08955_exo.mp4",
+      "verb_label": "place",
+      "atomic_text": "places the seal of the seasoning container in his right hand with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_08073_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08073_exo.mp4",
+      "verb_label": "open",
+      "atomic_text": "opens the cabinet drawer with her left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_06785_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06785_ego.mp4",
+      "verb_label": "wash",
+      "atomic_text": "washes the green onions in her both hands with water",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_03635_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03635_ego.mp4",
+      "verb_label": "wash",
+      "atomic_text": "washes the fork in her left hand with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_06797_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06797_ego.mp4",
+      "verb_label": "wash",
+      "atomic_text": "washes the spoon in her both hands with water",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_05654_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05654_ego.mp4",
+      "verb_label": "rinse",
+      "atomic_text": "rinses the black measuring cup under running water with her left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_08650_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08650_exo.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a sieve from the cabinet drawer with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_08865_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08865_exo.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks the spatula from the utensil rack on the countertop with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_03922_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03922_exo.mp4",
+      "verb_label": "pick up",
+      "atomic_text": "picks up a bowl from the cabinet",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_06917_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06917_exo.mp4",
+      "verb_label": "take",
+      "atomic_text": "takes a soy sauce bottle from the cabinet with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_05576_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05576_ego.mp4",
+      "verb_label": "pour",
+      "atomic_text": "pours the egg into the bowl with her hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_07629_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07629_ego.mp4",
+      "verb_label": "pour",
+      "atomic_text": "pours the egg yolk into the steel bowl with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_07627_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07627_ego.mp4",
+      "verb_label": "crack",
+      "atomic_text": "cracks the egg with the spoon in his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_07309_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07309_ego.mp4",
+      "verb_label": "crack",
+      "atomic_text": "cracks the egg with the spoon in his right hand into the mixing bowl",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04174_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04174_ego.mp4",
+      "verb_label": "pour",
+      "atomic_text": "pours the egg into the stainless bowl on the countertop with her both hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_03424_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03424_ego.mp4",
+      "verb_label": "rinse",
+      "atomic_text": "rinses the scallion under the running tap with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_08261_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08261_ego.mp4",
+      "verb_label": "wash",
+      "atomic_text": "washes her hands in the sink",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_03129_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03129_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a bottle",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_05697_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05697_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks the white bowl from the kitchen island with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_07777_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07777_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a spoon from the utensil bow below the kitchen counter with his right had",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_06597_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06597_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a fork from a cup on the countertop with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_06766_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06766_ego.mp4",
+      "verb_label": "close",
+      "atomic_text": "closes the pack of spaghetti with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_05468_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05468_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a black bowl from the dishwasher with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_08797_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08797_ego.mp4",
+      "verb_label": "close",
+      "atomic_text": "closes the door of the cabinet with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04864_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04864_exo.mp4",
+      "verb_label": "place",
+      "atomic_text": "places the recipe manual on the countertop with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_06889_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06889_exo.mp4",
+      "verb_label": "take",
+      "atomic_text": "takes spring onions from the big bowl on the countertop with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_08844_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08844_exo.mp4",
+      "verb_label": "place",
+      "atomic_text": "places his left hand on the countertop",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_05014_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05014_exo.mp4",
+      "verb_label": "add",
+      "atomic_text": "adds the cut leaves to the bowl on the countertop using a knife",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_06015_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06015_exo.mp4",
+      "verb_label": "place",
+      "atomic_text": "places the plate and spatula on the countertop with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_06823_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06823_exo.mp4",
+      "verb_label": "place",
+      "atomic_text": "places the spoon above the skillet with her left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_08746_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08746_exo.mp4",
+      "verb_label": "place",
+      "atomic_text": "places the bowl on the table with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_07936_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07936_exo.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks the milk bag from the countertop with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_05723_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05723_exo.mp4",
+      "verb_label": "place",
+      "atomic_text": "places the skillet on the gas cooker with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_04455_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04455_exo.mp4",
+      "verb_label": "pick up",
+      "atomic_text": "picks up the stainless steel cup on the countertop with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_04073_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04073_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a bottle of cooking oil from the cupboard with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_03742_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03742_ego.mp4",
+      "verb_label": "adjust",
+      "atomic_text": "adjusts the skillet on the stove with her left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_02867_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_02867_ego.mp4",
+      "verb_label": "turn",
+      "atomic_text": "turns the bike with his hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_03414_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03414_ego.mp4",
+      "verb_label": "cut",
+      "atomic_text": "cut the root of the onion on the chopping board with the knife in his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_07740_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07740_ego.mp4",
+      "verb_label": "cut",
+      "atomic_text": "cuts the tomato slice on the cutting board with the knife in her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_07734_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07734_ego.mp4",
+      "verb_label": "cut",
+      "atomic_text": "cuts the tomato slices on the cutting board with the knife in her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_03189_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03189_ego.mp4",
+      "verb_label": "dice",
+      "atomic_text": "dices the tomato with the knife in her right hand on the cutting board",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_03262_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03262_ego.mp4",
+      "verb_label": "dice",
+      "atomic_text": "dices the tomato with a knife",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04825_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04825_ego.mp4",
+      "verb_label": "peel",
+      "atomic_text": "peels the garlic clove flesh from the garlic clove with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_05371_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05371_ego.mp4",
+      "verb_label": "cut",
+      "atomic_text": "cuts a pepper with the small knife in his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04152_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04152_ego.mp4",
+      "verb_label": "peel",
+      "atomic_text": "peels the onion with the knife in her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_07224_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07224_ego.mp4",
+      "verb_label": "peel",
+      "atomic_text": "peels the tip of the packet of covid test swab with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_00340_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_00340_ego.mp4",
+      "verb_label": "touch",
+      "atomic_text": "touches the tip of the nasal swab package with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_05374_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05374_ego.mp4",
+      "verb_label": "slice",
+      "atomic_text": "slices the red bell pepper on the chopping board with the knife in his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_02967_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_02967_ego.mp4",
+      "verb_label": "slice",
+      "atomic_text": "slices the garlic on the chopping board with the knife in his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_02968_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_02968_ego.mp4",
+      "verb_label": "dice",
+      "atomic_text": "dices the sliced garlic on the chopping board with the knife in his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_07134_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07134_ego.mp4",
+      "verb_label": "hold",
+      "atomic_text": "holds the butter nylon with her left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04068_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04068_ego.mp4",
+      "verb_label": "add",
+      "atomic_text": "adds some chili powder into the mug on the countertop with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_07076_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07076_ego.mp4",
+      "verb_label": "add",
+      "atomic_text": "adds drops of the fluid from the test tube onto the test plate on the table with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_02953_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_02953_ego.mp4",
+      "verb_label": "turn off",
+      "atomic_text": "turns off the coffee maker with his left index finger",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_03125_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03125_ego.mp4",
+      "verb_label": "add",
+      "atomic_text": "adds the cut tomato to the bowl of salad mixture with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_08260_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08260_ego.mp4",
+      "verb_label": "add",
+      "atomic_text": "adds water into the dough with the measuring cup in her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_06498_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06498_exo.mp4",
+      "verb_label": "pass",
+      "atomic_text": "passes the slutted spatula to his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_06347_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06347_ego.mp4",
+      "verb_label": "wash",
+      "atomic_text": "washes a set of measuring spoons with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_06347_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06347_exo.mp4",
+      "verb_label": "wash",
+      "atomic_text": "washes a set of measuring spoons with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_05831_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05831_exo.mp4",
+      "verb_label": "wash",
+      "atomic_text": "washes hand in the sink",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_03230_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03230_ego.mp4",
+      "verb_label": "cut",
+      "atomic_text": "cuts tomato with chopping board",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_07815_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07815_exo.mp4",
+      "verb_label": "cut",
+      "atomic_text": "cuts the green chili pepper with the knife in his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_03415_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03415_ego.mp4",
+      "verb_label": "peel",
+      "atomic_text": "peels the onion in his right hand with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_03506_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03506_ego.mp4",
+      "verb_label": "cut",
+      "atomic_text": "cuts the cut tomatoes on the cutting board with the knife in her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04916_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04916_ego.mp4",
+      "verb_label": "cut",
+      "atomic_text": "cuts the garlic into smaller pieces on the cutting board using a knife",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_02985_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_02985_ego.mp4",
+      "verb_label": "hold",
+      "atomic_text": "holds a tomato on the chopping board with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04046_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04046_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks an egg from the countertop with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_08801_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08801_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks an egg from the egg carton on the countertop with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_06963_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06963_ego.mp4",
+      "verb_label": "hold",
+      "atomic_text": "holds the strainer bowl with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_05940_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05940_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks the garlics in the white bowl on the kitchen countertop with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_03593_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03593_ego.mp4",
+      "verb_label": "take",
+      "atomic_text": "takes a knife from the countertop with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_03168_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03168_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a seed of tomato from the bowl of vegetable in the fridge with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_03147_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03147_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a bowl from the plate rack",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04134_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04134_ego.mp4",
+      "verb_label": "hold",
+      "atomic_text": "holds the refrigerator handle with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_08771_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08771_ego.mp4",
+      "verb_label": "turn",
+      "atomic_text": "turns the gas cooker knob with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04339_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04339_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a white and green nylon with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_07729_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07729_ego.mp4",
+      "verb_label": "cut",
+      "atomic_text": "cuts the tomato slice on the cutting board with the knife in her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_02983_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_02983_ego.mp4",
+      "verb_label": "rinse",
+      "atomic_text": "rinses the cherry tomatoes under the running tap with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_03091_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03091_ego.mp4",
+      "verb_label": "place",
+      "atomic_text": "places the peeler in his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_03017_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03017_ego.mp4",
+      "verb_label": "rinse",
+      "atomic_text": "rinses the spoon under the running water with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_06337_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06337_exo.mp4",
+      "verb_label": "stir",
+      "atomic_text": "stirs the tea in the saucepan with a spoon",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_06621_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06621_exo.mp4",
+      "verb_label": "touch",
+      "atomic_text": "touches the noodles in the saucepan on the gas cooker with the fork in his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_08870_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08870_exo.mp4",
+      "verb_label": "pour",
+      "atomic_text": "pours the egg mixture in the bowl into the frying pan with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_06635_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06635_exo.mp4",
+      "verb_label": "stir",
+      "atomic_text": "stirs the noodles in the saucepan on the gas cooker with the fork in his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_06643_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06643_exo.mp4",
+      "verb_label": "stir",
+      "atomic_text": "stirs the noodles in the saucepan on the gas cooker with the fork in his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_05949_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05949_ego.mp4",
+      "verb_label": "dice",
+      "atomic_text": "dices the garlic on the chopping board with the knife in her left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04347_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04347_ego.mp4",
+      "verb_label": "dice",
+      "atomic_text": "dices green pepper",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_03811_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03811_ego.mp4",
+      "verb_label": "slice",
+      "atomic_text": "slices the onion",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_07728_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07728_ego.mp4",
+      "verb_label": "dice",
+      "atomic_text": "dices the tomatoes on the chopping board with the knife in her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_07702_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07702_ego.mp4",
+      "verb_label": "cut",
+      "atomic_text": "cuts the cucumber pieces with the knife in her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_05972_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05972_exo.mp4",
+      "verb_label": "stir",
+      "atomic_text": "stirs the diced garlic in the skillet with the spatula in her left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_05999_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05999_exo.mp4",
+      "verb_label": "pour",
+      "atomic_text": "pours salt from the container in her right hand into the egg mixture in the skillet",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_07023_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07023_exo.mp4",
+      "verb_label": "add",
+      "atomic_text": "adds crushed pepper from the crushed pepper container into  the noodles in the skillet with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_06440_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06440_ego.mp4",
+      "verb_label": "stir",
+      "atomic_text": "stirs the tea with the fork on his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_05920_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05920_exo.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks the bowl in the skillet with her left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_04019_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04019_exo.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks the spoon from the plate with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_06420_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06420_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks the stainless fork from the counter top with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_06652_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06652_ego.mp4",
+      "verb_label": "turn",
+      "atomic_text": "turns the control of the gas cooker with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_06341_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06341_exo.mp4",
+      "verb_label": "pass",
+      "atomic_text": "passes the jar of sugar to her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_03676_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03676_ego.mp4",
+      "verb_label": "take",
+      "atomic_text": "takes the fork with her left hand from the table knife in her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_05264_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05264_ego.mp4",
+      "verb_label": "cover",
+      "atomic_text": "covers the container of toasted sesame seeds with a lid in her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_01375_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_01375_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks the waste bag from the COVID -19 test pack with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04843_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04843_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a bottle of lemon juice from the countertop with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04820_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04820_exo.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks garlic cloves from the countertop with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_05250_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05250_exo.mp4",
+      "verb_label": "turn off",
+      "atomic_text": "turns off the tap with her left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_07197_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07197_exo.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks the spatula from the wall dish rack with her left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_04475_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04475_exo.mp4",
+      "verb_label": "pass",
+      "atomic_text": "passes the kitchen towel from her left hand to her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_07284_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07284_exo.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks the sugar container lid from the countertop with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_05684_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05684_ego.mp4",
+      "verb_label": "add",
+      "atomic_text": "adds sugar to the mix of ingredients in the sauce pan with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_05515_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05515_ego.mp4",
+      "verb_label": "add",
+      "atomic_text": "adds salt from a container to his left hand with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_00893_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_00893_ego.mp4",
+      "verb_label": "dip",
+      "atomic_text": "dips the collection swab into the test tube on the rack",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_05686_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05686_ego.mp4",
+      "verb_label": "add",
+      "atomic_text": "adds sugar to the mix of ingredients in the sauce pan with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04467_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04467_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a cinnamon stick from the pack of cinnamon with her left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04959_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04959_exo.mp4",
+      "verb_label": "pour",
+      "atomic_text": "pours vinegar into the measuring spoon with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_04949_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04949_exo.mp4",
+      "verb_label": "open",
+      "atomic_text": "opens the lid of the soy sauce using his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_04960_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04960_exo.mp4",
+      "verb_label": "place",
+      "atomic_text": "places the bottle of vinegar on the countertop with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_07934_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07934_exo.mp4",
+      "verb_label": "pour",
+      "atomic_text": "pours milk from the milk jug into the bowl on the countertop with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_04955_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04955_exo.mp4",
+      "verb_label": "pour",
+      "atomic_text": "pours soy sauce into the container with the measuring spoon in his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_07277_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07277_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a sugar container from the kitchen shelf with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_06399_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06399_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a fork from the rack on top of the kitchen cabinet with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04738_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04738_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a gas lighter from the utensil holder with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_03368_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03368_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks the cooking oil container on the counter top",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_06508_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06508_exo.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a blue plate on the counter top with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_06461_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06461_exo.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks cleaver knife from the counter top with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_08851_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08851_exo.mp4",
+      "verb_label": "remove",
+      "atomic_text": "removes the fork from the bowl with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_01769_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_01769_exo.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks the test tube from the table with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_08027_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08027_exo.mp4",
+      "verb_label": "cut",
+      "atomic_text": "cuts the packet of covid test indicator with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_03235_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03235_exo.mp4",
+      "verb_label": "cut",
+      "atomic_text": "cuts cucumber",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_07907_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07907_exo.mp4",
+      "verb_label": "dice",
+      "atomic_text": "dices the tomato on the chopping board with the knife in his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_03601_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03601_ego.mp4",
+      "verb_label": "slice",
+      "atomic_text": "slices the onion on the chopping board with the knife in her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04812_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04812_ego.mp4",
+      "verb_label": "gather",
+      "atomic_text": "gathers the chopped celeries in the tray with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_03504_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03504_ego.mp4",
+      "verb_label": "slice",
+      "atomic_text": "slices the tomato on the chopping board with the knife in her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_08175_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08175_ego.mp4",
+      "verb_label": "slice",
+      "atomic_text": "slices the tomato on the cutting board",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_03595_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03595_ego.mp4",
+      "verb_label": "slice",
+      "atomic_text": "slices the tomato on the chopping board with the knife in her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_03598_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03598_ego.mp4",
+      "verb_label": "move",
+      "atomic_text": "moves the onion on the chopping board with her left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_00226_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_00226_ego.mp4",
+      "verb_label": "place",
+      "atomic_text": "places the test manual on the table with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_01137_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_01137_ego.mp4",
+      "verb_label": "pick out",
+      "atomic_text": "picks out the disposal bag from the covid-19 box with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_05693_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05693_ego.mp4",
+      "verb_label": "place",
+      "atomic_text": "places the spatula on the countertop with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_05341_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05341_ego.mp4",
+      "verb_label": "hold",
+      "atomic_text": "holds a carrot with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_08051_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08051_ego.mp4",
+      "verb_label": "place",
+      "atomic_text": "places the skillet on the stovetop with her left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_02918_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_02918_ego.mp4",
+      "verb_label": "hold",
+      "atomic_text": "holds the right brake caliper arm with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_03088_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03088_ego.mp4",
+      "verb_label": "cut",
+      "atomic_text": "cuts the cucumber on the chopping board with the butcher knife in his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_05538_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05538_ego.mp4",
+      "verb_label": "hold",
+      "atomic_text": "holds a garlic with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_03373_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03373_exo.mp4",
+      "verb_label": "pour",
+      "atomic_text": "pours the cooking oil into the frying pan",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_02156_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_02156_ego.mp4",
+      "verb_label": "hold",
+      "atomic_text": "holds the test pack on the table with her left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04644_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04644_ego.mp4",
+      "verb_label": "scoop",
+      "atomic_text": "scoops tea from the tea jar with the spoon",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04645_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04645_ego.mp4",
+      "verb_label": "scoop",
+      "atomic_text": "scoops tea from the tea jar with the spoon",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04146_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04146_ego.mp4",
+      "verb_label": "open",
+      "atomic_text": "opens the pepper container with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_07615_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07615_ego.mp4",
+      "verb_label": "place",
+      "atomic_text": "places the foil pack into the zip lock bag with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_06628_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06628_exo.mp4",
+      "verb_label": "place",
+      "atomic_text": "places the medium sized bowl and the small bowl into the kitchen drawer with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_04220_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04220_exo.mp4",
+      "verb_label": "place",
+      "atomic_text": "places the red saucepan on the kitchen bottom shelf",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_06625_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06625_exo.mp4",
+      "verb_label": "place",
+      "atomic_text": "places the small bowl into the medium sized bowl in his right hand with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_06574_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06574_exo.mp4",
+      "verb_label": "move",
+      "atomic_text": "moves the napkin on the cabinet hanger with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_06626_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06626_exo.mp4",
+      "verb_label": "pass",
+      "atomic_text": "passes the medium sized bowl from his right hand to his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_05288_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05288_ego.mp4",
+      "verb_label": "open",
+      "atomic_text": "opens a plastic bag on the island with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_00217_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_00217_exo.mp4",
+      "verb_label": "open",
+      "atomic_text": "opens the test box seal with her left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_00913_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_00913_ego.mp4",
+      "verb_label": "place",
+      "atomic_text": "places the covid-19 test bag in the test kit with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_03336_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03336_exo.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks chooping sticks from the counter top",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_03131_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03131_exo.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a bottle",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_00086_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_00086_exo.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks the nasal swab pack from the table with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_05264_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05264_exo.mp4",
+      "verb_label": "cover",
+      "atomic_text": "covers the container of toasted sesame seeds with a lid in her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_05143_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05143_exo.mp4",
+      "verb_label": "place",
+      "atomic_text": "places the bottle of sesame oil on the cabinet with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_04491_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04491_ego.mp4",
+      "verb_label": "place",
+      "atomic_text": "places the milk pack on the counter top with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_00733_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_00733_exo.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks the covid 19 saliva test device from the table with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_08237_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08237_exo.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a dish from a dish rack with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_05865_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05865_exo.mp4",
+      "verb_label": "open",
+      "atomic_text": "opens bottle of black pepper",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_02074_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_02074_exo.mp4",
+      "verb_label": "remove",
+      "atomic_text": "removes a test tube from the pack with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_04731_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04731_ego.mp4",
+      "verb_label": "open",
+      "atomic_text": "opens the fridge with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_03966_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03966_ego.mp4",
+      "verb_label": "open",
+      "atomic_text": "opens the refrigerator door with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_03914_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03914_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks green pepper from fridge",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_06298_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06298_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a jar of black tea leaves from the pantry with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_08049_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08049_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a crate of egg from the refrigerator with her left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_08788_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08788_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks an egg carton from the refrigerator with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04443_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04443_ego.mp4",
+      "verb_label": "pour",
+      "atomic_text": "pours water into the stainless bowl with the mug in her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_05631_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05631_ego.mp4",
+      "verb_label": "pour",
+      "atomic_text": "pours oil from the oil bottle into the plastic spoon in ger right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_06724_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06724_ego.mp4",
+      "verb_label": "pour",
+      "atomic_text": "pours olive oil from the bottle into the spoon with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_05703_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05703_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks the bowl of egg from the countertop with her left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04893_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04893_ego.mp4",
+      "verb_label": "peel",
+      "atomic_text": "peels the outer skin of the garlic with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_07373_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07373_ego.mp4",
+      "verb_label": "hold",
+      "atomic_text": "holds the nozzle cap with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04896_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04896_ego.mp4",
+      "verb_label": "peel",
+      "atomic_text": "peels the outer skin of the garlic with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_07374_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07374_ego.mp4",
+      "verb_label": "cover",
+      "atomic_text": "covers the solution tube with the nozzle cap in his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04899_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04899_ego.mp4",
+      "verb_label": "peel",
+      "atomic_text": "peels the outer skin of the garlic with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_08944_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08944_exo.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a spice container from the cabinet with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_04502_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04502_exo.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a pot in the kitchen steel rack with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_08942_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08942_exo.mp4",
+      "verb_label": "place",
+      "atomic_text": "places the spatula on the small bowl in the kitchen sink with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_06995_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06995_ego.mp4",
+      "verb_label": "take",
+      "atomic_text": "takes the soy sauce bottle from the countertop with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_03327_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03327_ego.mp4",
+      "verb_label": "pour",
+      "atomic_text": "pours vegetable oil from the vegetable oil bottle into the brown bowl of cucumber tomato mixture with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_02021_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_02021_ego.mp4",
+      "verb_label": "swirl",
+      "atomic_text": "swirls the collection swab around in the first nostril with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04326_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04326_ego.mp4",
+      "verb_label": "pour",
+      "atomic_text": "pours the cracked egg into a bowl",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_03517_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03517_ego.mp4",
+      "verb_label": "add",
+      "atomic_text": "adds oil into the skillet from the bottle of oil in her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04048_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04048_exo.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a knife from the countertop with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_04791_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04791_exo.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks chopped onions from the cutting board with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_02390_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_02390_exo.mp4",
+      "verb_label": "pick up",
+      "atomic_text": "picks up a new inner tube from the table with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_06506_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06506_exo.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks chopping sticks from the chopping board with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_08272_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08272_ego.mp4",
+      "verb_label": "press",
+      "atomic_text": "presses both hands hard at a rate of 100 to 120 compressions per minute on the patient's chest",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_08279_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08279_ego.mp4",
+      "verb_label": "press",
+      "atomic_text": "presses the chest of the CPR manikin with her both hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_07213_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07213_exo.mp4",
+      "verb_label": "press",
+      "atomic_text": "presses the chest of the CPR mannequin with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_02947_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_02947_exo.mp4",
+      "verb_label": "compress",
+      "atomic_text": "compresses the CPR mannequin\u2019s chest with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_07212_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07212_exo.mp4",
+      "verb_label": "place",
+      "atomic_text": "places both hands on the CPR mannequin",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_07213_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07213_ego.mp4",
+      "verb_label": "press",
+      "atomic_text": "presses the chest of the CPR mannequin with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_07214_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07214_exo.mp4",
+      "verb_label": "press",
+      "atomic_text": "presses the chest of the CPR mannequin with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_03610_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03610_ego.mp4",
+      "verb_label": "hold",
+      "atomic_text": "holds the egg with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_02216_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_02216_ego.mp4",
+      "verb_label": "hold",
+      "atomic_text": "holds the tube with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_00352_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_00352_ego.mp4",
+      "verb_label": "rotate",
+      "atomic_text": "rotates the nasal swab in the extraction buffer tube with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_02966_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_02966_ego.mp4",
+      "verb_label": "pack",
+      "atomic_text": "packs the sliced cucumber on the chopping board with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_02975_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_02975_ego.mp4",
+      "verb_label": "hold",
+      "atomic_text": "holds the pack of cherry tomatoes with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04793_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04793_exo.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks chopped onions from the cutting board with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_04338_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04338_exo.mp4",
+      "verb_label": "pick up",
+      "atomic_text": "picks up nylon from the fridge",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_04795_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04795_exo.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks chopped onions from the cutting board with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_03704_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03704_exo.mp4",
+      "verb_label": "adjust",
+      "atomic_text": "adjusts the skillet on the stove with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_04381_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04381_ego.mp4",
+      "verb_label": "pour",
+      "atomic_text": "pours some oil into the pan",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04050_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04050_ego.mp4",
+      "verb_label": "crack",
+      "atomic_text": "cracks the egg into the mug on the countertop with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_08025_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08025_ego.mp4",
+      "verb_label": "remove",
+      "atomic_text": "removes the blue cap from the package in his left hand with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_06623_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06623_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a bowl from the drawer with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_05650_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05650_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks the white measuring cup from the countertop with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_03057_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03057_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks the tomato from the tomatoes container with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_06666_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06666_ego.mp4",
+      "verb_label": "secure",
+      "atomic_text": "secures the noodles in the saucepan in his right hand with the fork in his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_05660_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05660_ego.mp4",
+      "verb_label": "drop",
+      "atomic_text": "drops the measuring cups on the countertop with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_06645_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06645_exo.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks the fork from the packet of noodles on the countertop with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_06633_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06633_exo.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks the fork from the packet of noodles on the countertop with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_04070_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04070_exo.mp4",
+      "verb_label": "beat",
+      "atomic_text": "beats the egg mixture in the mug with the fork in his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_04088_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04088_exo.mp4",
+      "verb_label": "place",
+      "atomic_text": "places the knife on the countertop with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_06459_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06459_ego.mp4",
+      "verb_label": "open",
+      "atomic_text": "opens the cabit with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_08105_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08105_ego.mp4",
+      "verb_label": "open",
+      "atomic_text": "opens the cabinet door with her left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04355_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04355_ego.mp4",
+      "verb_label": "open",
+      "atomic_text": "opens the kitchen cabinet",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_06378_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06378_exo.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a pack of sugar from the shelf with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_03970_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_03970_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks an egg from the egg tray in the refrigerator with her left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04337_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04337_ego.mp4",
+      "verb_label": "open",
+      "atomic_text": "opens the door of a fridge",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_07986_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07986_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks the plate from the countertop with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04094_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04094_ego.mp4",
+      "verb_label": "press",
+      "atomic_text": "presses some buttons on the electric cooker with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_06460_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06460_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a noodle pack with right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04165_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04165_ego.mp4",
+      "verb_label": "move",
+      "atomic_text": "moves a vegetable oil container on the countertop with her left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_00312_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_00312_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks the extraction buffer tube in the package with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04911_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04911_ego.mp4",
+      "verb_label": "place",
+      "atomic_text": "places the knife in the rack using his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_06464_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06464_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks the spring onions bunch from the plastic bag",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04490_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04490_ego.mp4",
+      "verb_label": "hold",
+      "atomic_text": "holds the milk pack with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04913_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04913_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a knife from the rack using his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_08796_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08796_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a bowl form the cabinet with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_06826_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06826_ego.mp4",
+      "verb_label": "pour",
+      "atomic_text": "pours oil into the skillet with a spoon in her left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_08927_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_08927_ego.mp4",
+      "verb_label": "open",
+      "atomic_text": "opens the door of the cabinet with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_07214_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07214_ego.mp4",
+      "verb_label": "press",
+      "atomic_text": "presses the chest of the CPR mannequin with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_02497_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_02497_ego.mp4",
+      "verb_label": "press",
+      "atomic_text": "presses the wheel with his both hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_02540_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_02540_ego.mp4",
+      "verb_label": "press",
+      "atomic_text": "presses the tire with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_02365_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_02365_ego.mp4",
+      "verb_label": "press",
+      "atomic_text": "presses the tire with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_02767_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_02767_ego.mp4",
+      "verb_label": "hold",
+      "atomic_text": "holds the derailleur of the bicycle with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_05304_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05304_ego.mp4",
+      "verb_label": "take",
+      "atomic_text": "takes a cilantro stem from the plastic bag on the island with both hands",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_07109_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07109_exo.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks an egg from the egg bag in the kitchen shelf with her right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_06011_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06011_exo.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks the tomato sepal from the countertop with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_04047_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04047_exo.mp4",
+      "verb_label": "move",
+      "atomic_text": "moves a container on the countertop with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_07940_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07940_exo.mp4",
+      "verb_label": "place",
+      "atomic_text": "places the milk bag on the countertop with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_06430_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06430_exo.mp4",
+      "verb_label": "grab",
+      "atomic_text": "grabs the tea pot handle with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_06070_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_06070_exo.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks the set of measuring spoons from the countertop with her left hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_02815_exo",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_02815_exo.mp4",
+      "verb_label": "screw",
+      "atomic_text": "screws the axle nut with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "exo"
+    },
+    {
+      "id": "eval_04820_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04820_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks garlic cloves from the countertop with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_04854_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_04854_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a jar of almond nuts from the countertop with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_05398_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_05398_ego.mp4",
+      "verb_label": "pick",
+      "atomic_text": "picks a celery from the countertop with his left hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    },
+    {
+      "id": "eval_07764_ego",
+      "src": "data/videos_seed42_feb_trimmed/pool/eval_07764_ego.mp4",
+      "verb_label": "remove",
+      "atomic_text": "removes a milk bag from the milk jug with his right hand",
+      "start": 0,
+      "end": 0,
+      "view": "ego"
+    }
+  ]
+}

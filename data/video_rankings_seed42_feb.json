@@ -1,0 +1,732 @@
+{
+  "rankings": {
+    "query_05": [
+      "eval_06222_exo",
+      "eval_01098_exo",
+      "eval_00905_exo",
+      "eval_01349_exo",
+      "eval_07087_exo"
+    ],
+    "query_07": [
+      "eval_07575_ego",
+      "eval_08000_ego",
+      "eval_02172_ego",
+      "eval_01085_ego",
+      "eval_07367_ego"
+    ],
+    "query_08": [
+      "eval_00875_ego",
+      "eval_01325_ego",
+      "eval_01219_ego",
+      "eval_08145_ego",
+      "eval_00928_ego"
+    ],
+    "query_10": [
+      "eval_01999_ego",
+      "eval_00973_ego",
+      "eval_01212_ego",
+      "eval_00437_ego",
+      "eval_00391_ego"
+    ],
+    "query_11": [
+      "eval_00218_ego",
+      "eval_01868_ego",
+      "eval_00004_ego",
+      "eval_01720_ego",
+      "eval_01469_ego"
+    ],
+    "query_13": [
+      "eval_00875_ego",
+      "eval_00587_ego",
+      "eval_07084_ego",
+      "eval_00827_ego",
+      "eval_01323_ego"
+    ],
+    "query_15": [
+      "eval_05451_exo",
+      "eval_07461_exo",
+      "eval_00183_exo",
+      "eval_05584_exo",
+      "eval_00282_exo"
+    ],
+    "query_22": [
+      "eval_08546_ego",
+      "eval_03036_ego",
+      "eval_08536_ego",
+      "eval_05154_ego",
+      "eval_01955_ego"
+    ],
+    "query_23": [
+      "eval_08546_ego",
+      "eval_03647_ego",
+      "eval_04466_ego",
+      "eval_08760_ego",
+      "eval_06381_ego"
+    ],
+    "query_28": [
+      "eval_07668_exo",
+      "eval_07671_exo",
+      "eval_07751_exo",
+      "eval_07304_exo",
+      "eval_02930_exo"
+    ],
+    "query_29": [
+      "eval_02930_ego",
+      "eval_02932_ego",
+      "eval_08277_ego",
+      "eval_08046_exo",
+      "eval_08279_exo"
+    ],
+    "query_30": [
+      "eval_02930_exo",
+      "eval_07259_exo",
+      "eval_02932_exo",
+      "eval_07671_exo",
+      "eval_02375_exo"
+    ],
+    "query_32": [
+      "eval_04780_ego",
+      "eval_05065_ego",
+      "eval_04991_ego",
+      "eval_07677_ego",
+      "eval_04826_ego"
+    ],
+    "query_35": [
+      "eval_05098_ego",
+      "eval_06790_ego",
+      "eval_05606_ego",
+      "eval_05081_ego",
+      "eval_05076_ego"
+    ],
+    "query_36": [
+      "eval_05123_ego",
+      "eval_07486_ego",
+      "eval_05114_ego",
+      "eval_04846_ego",
+      "eval_05100_ego"
+    ],
+    "query_38": [
+      "eval_03331_ego",
+      "eval_06363_ego",
+      "eval_08249_ego",
+      "eval_04338_ego",
+      "eval_05826_ego"
+    ],
+    "query_40": [
+      "eval_07677_ego",
+      "eval_07712_ego",
+      "eval_07688_ego",
+      "eval_05065_ego",
+      "eval_04822_ego"
+    ],
+    "query_41": [
+      "eval_08787_ego",
+      "eval_04135_ego",
+      "eval_03299_ego",
+      "eval_03166_ego",
+      "eval_08249_ego"
+    ],
+    "query_42": [
+      "eval_06323_exo",
+      "eval_03822_exo",
+      "eval_07874_exo",
+      "eval_03828_exo",
+      "eval_06225_exo"
+    ],
+    "query_43": [
+      "eval_05598_exo",
+      "eval_05762_exo",
+      "eval_08854_exo",
+      "eval_06769_exo",
+      "eval_05676_exo"
+    ],
+    "query_46": [
+      "eval_04386_ego",
+      "eval_03280_ego",
+      "eval_05652_ego",
+      "eval_06686_ego",
+      "eval_05653_ego"
+    ],
+    "query_47": [
+      "eval_03245_ego",
+      "eval_03077_ego",
+      "eval_03071_ego",
+      "eval_03015_ego",
+      "eval_04144_ego"
+    ],
+    "query_49": [
+      "eval_06324_exo",
+      "eval_05593_exo",
+      "eval_06326_exo",
+      "eval_05811_exo",
+      "eval_06325_exo"
+    ],
+    "query_50": [
+      "eval_08083_ego",
+      "eval_06698_ego",
+      "eval_05685_ego",
+      "eval_05842_ego",
+      "eval_06716_ego"
+    ],
+    "query_53": [
+      "eval_02524_exo",
+      "eval_04100_exo",
+      "eval_04104_exo",
+      "eval_06564_exo",
+      "eval_03016_exo"
+    ],
+    "query_54": [
+      "eval_03331_ego",
+      "eval_06363_ego",
+      "eval_08249_ego",
+      "eval_08048_ego",
+      "eval_08787_ego"
+    ],
+    "query_55": [
+      "eval_08852_ego",
+      "eval_08777_ego",
+      "eval_06378_ego",
+      "eval_03285_ego",
+      "eval_08944_ego"
+    ],
+    "query_56": [
+      "eval_04224_exo",
+      "eval_08638_exo",
+      "eval_07479_exo",
+      "eval_07825_exo",
+      "eval_07840_exo"
+    ],
+    "query_57": [
+      "eval_08048_ego",
+      "eval_08249_ego",
+      "eval_04135_ego",
+      "eval_08954_ego",
+      "eval_03299_ego"
+    ],
+    "query_58": [
+      "eval_08779_ego",
+      "eval_08781_ego",
+      "eval_08826_ego",
+      "eval_05045_ego",
+      "eval_04484_ego"
+    ],
+    "query_60": [
+      "eval_03915_ego",
+      "eval_03195_ego",
+      "eval_03170_ego",
+      "eval_08930_ego",
+      "eval_04226_ego"
+    ],
+    "query_61": [
+      "eval_08054_exo",
+      "eval_07268_exo",
+      "eval_03745_exo",
+      "eval_03135_exo",
+      "eval_07754_exo"
+    ],
+    "query_62": [
+      "eval_08852_ego",
+      "eval_03285_ego",
+      "eval_07887_ego",
+      "eval_06378_ego",
+      "eval_07919_ego"
+    ],
+    "query_64": [
+      "eval_07681_ego",
+      "eval_05728_ego",
+      "eval_07682_ego",
+      "eval_05016_ego",
+      "eval_07746_ego"
+    ],
+    "query_65": [
+      "eval_08827_ego",
+      "eval_06410_ego",
+      "eval_04098_exo",
+      "eval_04352_ego",
+      "eval_03101_ego"
+    ],
+    "query_66": [
+      "eval_06531_exo",
+      "eval_08056_exo",
+      "eval_03097_exo",
+      "eval_06513_exo",
+      "eval_06457_exo"
+    ],
+    "query_67": [
+      "eval_04052_exo",
+      "eval_04379_exo",
+      "eval_08249_exo",
+      "eval_08955_exo",
+      "eval_08073_exo"
+    ],
+    "query_70": [
+      "eval_08650_exo",
+      "eval_02524_exo",
+      "eval_08865_exo",
+      "eval_03922_exo",
+      "eval_06917_exo"
+    ],
+    "query_71": [
+      "eval_05576_ego",
+      "eval_07629_ego",
+      "eval_07627_ego",
+      "eval_07309_ego",
+      "eval_04174_ego"
+    ],
+    "query_74": [
+      "eval_06797_ego",
+      "eval_06785_ego",
+      "eval_03424_ego",
+      "eval_08261_ego",
+      "eval_05654_ego"
+    ],
+    "query_77": [
+      "eval_07777_ego",
+      "eval_06597_ego",
+      "eval_06766_ego",
+      "eval_05468_ego",
+      "eval_08797_ego"
+    ],
+    "query_78": [
+      "eval_04864_exo",
+      "eval_06889_exo",
+      "eval_08844_exo",
+      "eval_05014_exo",
+      "eval_06015_exo"
+    ],
+    "query_80": [
+      "eval_06823_exo",
+      "eval_08746_exo",
+      "eval_07936_exo",
+      "eval_05723_exo",
+      "eval_04455_exo"
+    ],
+    "query_81": [
+      "eval_04073_ego",
+      "eval_08852_ego",
+      "eval_03742_ego",
+      "eval_02867_ego",
+      "eval_05468_ego"
+    ],
+    "query_85": [
+      "eval_03414_ego",
+      "eval_07740_ego",
+      "eval_07734_ego",
+      "eval_03189_ego",
+      "eval_03262_ego"
+    ],
+    "query_87": [
+      "eval_04827_ego",
+      "eval_07224_ego",
+      "eval_04825_ego",
+      "eval_00340_ego",
+      "eval_04152_ego"
+    ],
+    "query_93": [
+      "eval_04068_ego",
+      "eval_07076_ego",
+      "eval_02953_ego",
+      "eval_03125_ego",
+      "eval_08260_ego"
+    ],
+    "query_95": [
+      "eval_03635_ego",
+      "eval_06498_exo",
+      "eval_06347_ego",
+      "eval_06347_exo",
+      "eval_05831_exo"
+    ],
+    "query_96": [
+      "eval_03414_ego",
+      "eval_03230_ego",
+      "eval_07815_exo",
+      "eval_03415_ego",
+      "eval_03506_ego"
+    ],
+    "query_97": [
+      "eval_04916_ego",
+      "eval_02985_ego",
+      "eval_03414_ego",
+      "eval_05016_ego",
+      "eval_03415_ego"
+    ],
+    "query_98": [
+      "eval_04046_ego",
+      "eval_08801_ego",
+      "eval_06963_ego",
+      "eval_05940_ego",
+      "eval_03593_ego"
+    ],
+    "query_99": [
+      "eval_03414_ego",
+      "eval_07746_ego",
+      "eval_03415_ego",
+      "eval_07134_ego",
+      "eval_07677_ego"
+    ],
+    "query_100": [
+      "eval_03168_ego",
+      "eval_03147_ego",
+      "eval_04134_ego",
+      "eval_08771_ego",
+      "eval_04339_ego"
+    ],
+    "query_102": [
+      "eval_02983_ego",
+      "eval_03091_ego",
+      "eval_03424_ego",
+      "eval_04386_ego",
+      "eval_03017_ego"
+    ],
+    "query_104": [
+      "eval_06337_exo",
+      "eval_06621_exo",
+      "eval_08870_exo",
+      "eval_06635_exo",
+      "eval_06643_exo"
+    ],
+    "query_106": [
+      "eval_05949_ego",
+      "eval_02968_ego",
+      "eval_02967_ego",
+      "eval_04347_ego",
+      "eval_03811_ego"
+    ],
+    "query_107": [
+      "eval_03262_ego",
+      "eval_07729_ego",
+      "eval_05949_ego",
+      "eval_07728_ego",
+      "eval_07702_ego"
+    ],
+    "query_108": [
+      "eval_05972_exo",
+      "eval_05999_exo",
+      "eval_06337_exo",
+      "eval_07023_exo",
+      "eval_06440_ego"
+    ],
+    "query_109": [
+      "eval_05920_exo",
+      "eval_04019_exo",
+      "eval_06420_ego",
+      "eval_06652_ego",
+      "eval_06341_exo"
+    ],
+    "query_111": [
+      "eval_04846_ego",
+      "eval_03676_ego",
+      "eval_05264_ego",
+      "eval_01375_ego",
+      "eval_04843_ego"
+    ],
+    "query_112": [
+      "eval_04820_exo",
+      "eval_05250_exo",
+      "eval_07197_exo",
+      "eval_04475_exo",
+      "eval_07284_exo"
+    ],
+    "query_113": [
+      "eval_05684_ego",
+      "eval_05515_ego",
+      "eval_00893_ego",
+      "eval_05686_ego",
+      "eval_04467_ego"
+    ],
+    "query_114": [
+      "eval_04959_exo",
+      "eval_04949_exo",
+      "eval_04960_exo",
+      "eval_07934_exo",
+      "eval_04955_exo"
+    ],
+    "query_116": [
+      "eval_05697_ego",
+      "eval_07277_ego",
+      "eval_06399_ego",
+      "eval_04738_ego",
+      "eval_03368_ego"
+    ],
+    "query_117": [
+      "eval_06508_exo",
+      "eval_06461_exo",
+      "eval_08851_exo",
+      "eval_06513_exo",
+      "eval_01769_exo"
+    ],
+    "query_119": [
+      "eval_04799_ego",
+      "eval_08027_exo",
+      "eval_05371_ego",
+      "eval_03235_exo",
+      "eval_07907_exo"
+    ],
+    "query_120": [
+      "eval_03601_ego",
+      "eval_04812_ego",
+      "eval_05374_ego",
+      "eval_03504_ego",
+      "eval_08175_ego"
+    ],
+    "query_121": [
+      "eval_03601_ego",
+      "eval_05374_ego",
+      "eval_08175_ego",
+      "eval_03595_ego",
+      "eval_03598_ego"
+    ],
+    "query_125": [
+      "eval_00226_ego",
+      "eval_01137_ego",
+      "eval_05693_ego",
+      "eval_05341_ego",
+      "eval_08051_ego"
+    ],
+    "query_126": [
+      "eval_02918_ego",
+      "eval_03088_ego",
+      "eval_05538_ego",
+      "eval_03373_exo",
+      "eval_02156_ego"
+    ],
+    "query_127": [
+      "eval_04644_ego",
+      "eval_04645_ego",
+      "eval_04144_ego",
+      "eval_04146_ego",
+      "eval_07615_ego"
+    ],
+    "query_128": [
+      "eval_06628_exo",
+      "eval_04220_exo",
+      "eval_06625_exo",
+      "eval_06574_exo",
+      "eval_06626_exo"
+    ],
+    "query_129": [
+      "eval_05288_ego",
+      "eval_04146_ego",
+      "eval_00217_exo",
+      "eval_00233_ego",
+      "eval_00913_ego"
+    ],
+    "query_130": [
+      "eval_03336_exo",
+      "eval_03822_exo",
+      "eval_03131_exo",
+      "eval_00086_exo",
+      "eval_05264_exo"
+    ],
+    "query_133": [
+      "eval_05143_exo",
+      "eval_04491_ego",
+      "eval_06823_exo",
+      "eval_00733_exo",
+      "eval_08237_exo"
+    ],
+    "query_134": [
+      "eval_06531_exo",
+      "eval_03129_ego",
+      "eval_06513_exo",
+      "eval_05865_exo",
+      "eval_02074_exo"
+    ],
+    "query_135": [
+      "eval_03166_ego",
+      "eval_08249_ego",
+      "eval_04731_ego",
+      "eval_08048_ego",
+      "eval_03966_ego"
+    ],
+    "query_136": [
+      "eval_03914_ego",
+      "eval_06298_ego",
+      "eval_08049_ego",
+      "eval_03299_ego",
+      "eval_08788_ego"
+    ],
+    "query_138": [
+      "eval_04443_ego",
+      "eval_05631_ego",
+      "eval_06698_ego",
+      "eval_06724_ego",
+      "eval_05703_ego"
+    ],
+    "query_139": [
+      "eval_04893_ego",
+      "eval_07373_ego",
+      "eval_04896_ego",
+      "eval_07374_ego",
+      "eval_04899_ego"
+    ],
+    "query_140": [
+      "eval_08944_exo",
+      "eval_07197_exo",
+      "eval_04502_exo",
+      "eval_08942_exo",
+      "eval_06995_ego"
+    ],
+    "query_142": [
+      "eval_04443_ego",
+      "eval_03327_ego",
+      "eval_02021_ego",
+      "eval_04326_ego",
+      "eval_03517_ego"
+    ],
+    "query_152": [
+      "eval_04048_exo",
+      "eval_03131_exo",
+      "eval_02524_exo",
+      "eval_04104_exo",
+      "eval_04791_exo"
+    ],
+    "query_153": [
+      "eval_06508_exo",
+      "eval_06513_exo",
+      "eval_02390_exo",
+      "eval_06506_exo",
+      "eval_03336_exo"
+    ],
+    "query_154": [
+      "eval_08272_ego",
+      "eval_08277_ego",
+      "eval_08279_exo",
+      "eval_08279_ego",
+      "eval_02932_ego"
+    ],
+    "query_155": [
+      "eval_08277_ego",
+      "eval_08272_ego",
+      "eval_08279_ego",
+      "eval_02932_ego",
+      "eval_02930_ego"
+    ],
+    "query_156": [
+      "eval_07213_exo",
+      "eval_02947_exo",
+      "eval_07212_exo",
+      "eval_07213_ego",
+      "eval_07214_exo"
+    ],
+    "query_157": [
+      "eval_03610_ego",
+      "eval_02216_ego",
+      "eval_00352_ego",
+      "eval_02966_ego",
+      "eval_02975_ego"
+    ],
+    "query_158": [
+      "eval_07304_exo",
+      "eval_07751_exo",
+      "eval_07671_exo",
+      "eval_02932_exo",
+      "eval_02930_exo"
+    ],
+    "query_159": [
+      "eval_04793_exo",
+      "eval_04338_exo",
+      "eval_08865_exo",
+      "eval_04795_exo",
+      "eval_03704_exo"
+    ],
+    "query_160": [
+      "eval_04381_ego",
+      "eval_04050_ego",
+      "eval_04326_ego",
+      "eval_05576_ego",
+      "eval_08025_ego"
+    ],
+    "query_162": [
+      "eval_06623_ego",
+      "eval_05650_ego",
+      "eval_03057_ego",
+      "eval_06666_ego",
+      "eval_05660_ego"
+    ],
+    "query_163": [
+      "eval_06645_exo",
+      "eval_04048_exo",
+      "eval_06633_exo",
+      "eval_04070_exo",
+      "eval_04088_exo"
+    ],
+    "query_164": [
+      "eval_06459_ego",
+      "eval_08954_ego",
+      "eval_08105_ego",
+      "eval_04355_ego",
+      "eval_06378_exo"
+    ],
+    "query_165": [
+      "eval_04135_ego",
+      "eval_03331_ego",
+      "eval_06363_ego",
+      "eval_03970_ego",
+      "eval_04337_ego"
+    ],
+    "query_169": [
+      "eval_07986_ego",
+      "eval_04339_ego",
+      "eval_04094_ego",
+      "eval_06460_ego",
+      "eval_04165_ego"
+    ],
+    "query_172": [
+      "eval_00312_ego",
+      "eval_04911_ego",
+      "eval_06464_ego",
+      "eval_04490_ego",
+      "eval_04913_ego"
+    ],
+    "query_173": [
+      "eval_08796_ego",
+      "eval_08788_ego",
+      "eval_06826_ego",
+      "eval_08928_ego",
+      "eval_08927_ego"
+    ],
+    "query_174": [
+      "eval_04337_ego",
+      "eval_03331_ego",
+      "eval_06363_ego",
+      "eval_03166_ego",
+      "eval_04135_ego"
+    ],
+    "query_178": [
+      "eval_07213_exo",
+      "eval_07212_exo",
+      "eval_07213_ego",
+      "eval_07214_ego",
+      "eval_07214_exo"
+    ],
+    "query_180": [
+      "eval_02497_ego",
+      "eval_02540_ego",
+      "eval_02365_ego",
+      "eval_02767_ego",
+      "eval_05304_ego"
+    ],
+    "query_181": [
+      "eval_07936_exo",
+      "eval_07109_exo",
+      "eval_06011_exo",
+      "eval_04047_exo",
+      "eval_07940_exo"
+    ],
+    "query_182": [
+      "eval_04048_exo",
+      "eval_06430_exo",
+      "eval_06070_exo",
+      "eval_02815_exo",
+      "eval_04820_ego"
+    ],
+    "query_183": [
+      "eval_04046_ego",
+      "eval_04854_ego",
+      "eval_04820_ego",
+      "eval_05398_ego",
+      "eval_07764_ego"
+    ]
+  }
+}

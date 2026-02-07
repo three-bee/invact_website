@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<meta name="viewport" content="width=1440, initial-scale=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>InvAct</title>
 <link rel="stylesheet" href="styles.css" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;600&family=Google+Sans+Code:wght@400;500&display=swap" />
@@ -52,7 +52,7 @@
 <a href="#" class="paper-link">Siyu Tang</a>
 </div>
 <div class="paper-meta">
-<a href="#" class="paper-link">Preprint</a> ·
+<a href="preprint.pdf" class="paper-link">Preprint</a> ·
 <a href="#" class="paper-link">Code and models</a>
 </div>
 </header>
@@ -62,10 +62,14 @@
 ⚛️ <strong>TL;DR:</strong> We learn <strong>atomic action embeddings</strong> that are invariant to both viewpoint and scene changes. This enables robust retrieval and transfer across short- and long-horizon human-centric and robot-centric action downstream tasks.</p>
 </section>
 
+<!--
 <section class="paper-section video-query-section">
 <div class="video-query-header">
 <p>Select a query clip to reorder the gallery by external rankings.</p>
+<div class="video-query-controls">
 <div id="videoConfigTabs" class="video-config-tabs"></div>
+<button id="videoShuffleBtn" class="video-shuffle-btn" type="button">Shuffle queries</button>
+</div>
 </div>
 <div id="videoGalleryStatus" class="video-gallery-status hidden"></div>
 <div class="video-gallery-wrap">
@@ -74,7 +78,40 @@
 <div class="video-gallery-overlay-label">Loading videos…</div>
 </div>
 </div>
-<div id="videoGallery" class="video-gallery"></div>
+<div id="videoGallery" class="video-query-grid">
+<div id="videoQueryRow" class="video-query-row"></div>
+<div class="video-result-header">
+<div class="video-result-title video-result-title-query">Current query</div>
+<div class="video-result-title video-result-title-matches">Top-5 cross-scene matches</div>
+</div>
+<div id="videoResultRow" class="video-result-row"></div>
+</div>
+</div>
+</section>
+-->
+
+<section class="paper-section video-query-section video-query-section-v2">
+<div class="video-query-header">
+<p>Select a query clip below, and InvAct will fetch the most similar atomic-action videos from Ego-Exo4D validation set. <strong>Shuffle queries</strong> to see different queries.</p>
+<div class="video-query-controls">
+<button id="videoShuffleBtn" class="video-shuffle-btn" type="button">Shuffle queries</button>
+</div>
+</div>
+<div id="videoGalleryStatus" class="video-gallery-status hidden"></div>
+<div class="video-gallery-wrap">
+<div id="videoGalleryOverlay" class="video-gallery-overlay">
+<div class="video-gallery-overlay-inner">
+<div class="video-gallery-overlay-label">Loading videos…</div>
+</div>
+</div>
+<div id="videoGallery" class="video-query-grid">
+<div id="videoQueryRow" class="video-query-row"></div>
+<div class="video-result-header">
+<div class="video-result-title video-result-title-query">Current query</div>
+<div class="video-result-title video-result-title-matches">Top-5 cross-scene matches</div>
+</div>
+<div id="videoResultRow" class="video-result-row"></div>
+</div>
 </div>
 </section>
 
@@ -805,6 +842,6 @@ menu to filter by verb, take group, or view.
 <div class="tooltip-meta" id="globalTooltipMeta"></div>
 </div>
 
-<script defer src="app.js"></script>
+<script defer src="app.js?v=seed42"></script>
 </body>
 </html>
