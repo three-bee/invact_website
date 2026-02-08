@@ -908,6 +908,30 @@ button:hover {
   text-align: center;
 }
 
+.phyworld-grid-subtitles {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 4px;
+  width: 100%;
+  align-items: center;
+}
+
+.phyworld-grid-subtitle {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--muted);
+  text-align: center;
+  line-height: 1.2;
+}
+
+.phyworld-grid-subtitle--query {
+  grid-column: 1 / span 1;
+}
+
+.phyworld-grid-subtitle--matches {
+  grid-column: 2 / span 3;
+}
+
 .montage-title-row {
   display: grid;
   grid-template-columns: repeat(10, minmax(0, 1fr));
@@ -951,7 +975,6 @@ button:hover {
 .keystep-problem-row {
   display: grid;
   grid-template-columns: 1.1fr 4.3fr;
-  grid-template-rows: auto 1fr;
   column-gap: 8px;
   row-gap: 6px;
   align-items: stretch;
@@ -967,8 +990,12 @@ button:hover {
   align-self: center;
 }
 
+.keystep-cell--grid {
+  gap: 2px;
+}
+
 .keystep-cell--query .keystep-query {
-  transform: translateY(calc(-1 * var(--keystep-caption-offset)));
+  transform: none;
 }
 
 .keystep-cell--spacer {
@@ -1005,6 +1032,43 @@ button:hover {
   width: 100%;
 }
 
+.keystep-grid-track {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  width: calc(100% - var(--keystep-label-col) - var(--keystep-label-gap));
+  margin-left: calc(var(--keystep-label-col) + var(--keystep-label-gap));
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+  text-align: center;
+}
+
+.keystep-grid-track > div {
+  color: rgba(176, 92, 92, 0.86);
+}
+
+.keystep-grid-track > .keystep-grid-track-hit {
+  color: var(--accent-2);
+}
+
+.keystep-grid-track--top {
+  margin-bottom: 0;
+}
+
+.keystep-grid-track--bottom {
+  margin-top: 0;
+}
+
+.keystep-grid-main-title {
+  width: calc(100% - var(--keystep-label-col) - var(--keystep-label-gap));
+  margin-left: calc(var(--keystep-label-col) + var(--keystep-label-gap));
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muted);
+  text-align: center;
+}
+
 .keystep-grid-title {
   margin-left: calc(var(--keystep-label-col) + var(--keystep-label-gap));
   width: calc(100% - var(--keystep-label-col) - var(--keystep-label-gap));
@@ -1031,6 +1095,13 @@ button:hover {
   display: flex;
   align-items: center;
   height: 100%;
+}
+
+.keystep-query-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--muted);
+  text-align: center;
 }
 
 .paper-vids-grid-wrap {
