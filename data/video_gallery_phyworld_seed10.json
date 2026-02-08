@@ -1,0 +1,125 @@
+{
+  "default": "subset_01",
+  "videos": [
+    {
+      "id": "subset_01",
+      "title": "Clip 01",
+      "src": "data/videos_phyworld_seed10/subset_01_collision_eval.mp4",
+      "start": null,
+      "end": null,
+      "verb_label": "collision_eval",
+      "atomic_text": null,
+      "view": "single"
+    },
+    {
+      "id": "subset_02",
+      "title": "Clip 02",
+      "src": "data/videos_phyworld_seed10/subset_02_collision_eval.mp4",
+      "start": null,
+      "end": null,
+      "verb_label": "collision_eval",
+      "atomic_text": null,
+      "view": "single"
+    },
+    {
+      "id": "subset_03",
+      "title": "Clip 03",
+      "src": "data/videos_phyworld_seed10/subset_03_collision_eval.mp4",
+      "start": null,
+      "end": null,
+      "verb_label": "collision_eval",
+      "atomic_text": null,
+      "view": "single"
+    },
+    {
+      "id": "subset_04",
+      "title": "Clip 04",
+      "src": "data/videos_phyworld_seed10/subset_04_collision_eval.mp4",
+      "start": null,
+      "end": null,
+      "verb_label": "collision_eval",
+      "atomic_text": null,
+      "view": "single"
+    },
+    {
+      "id": "subset_05",
+      "title": "Clip 05",
+      "src": "data/videos_phyworld_seed10/subset_05_collision_eval.mp4",
+      "start": null,
+      "end": null,
+      "verb_label": "collision_eval",
+      "atomic_text": null,
+      "view": "single"
+    },
+    {
+      "id": "subset_06",
+      "title": "Clip 06",
+      "src": "data/videos_phyworld_seed10/subset_06_collision_eval.mp4",
+      "start": null,
+      "end": null,
+      "verb_label": "collision_eval",
+      "atomic_text": null,
+      "view": "single"
+    },
+    {
+      "id": "subset_07",
+      "title": "Clip 07",
+      "src": "data/videos_phyworld_seed10/subset_07_uniform_motion_eval.mp4",
+      "start": null,
+      "end": null,
+      "verb_label": "uniform_motion_eval",
+      "atomic_text": null,
+      "view": "single"
+    },
+    {
+      "id": "subset_08",
+      "title": "Clip 08",
+      "src": "data/videos_phyworld_seed10/subset_08_uniform_motion_eval.mp4",
+      "start": null,
+      "end": null,
+      "verb_label": "uniform_motion_eval",
+      "atomic_text": null,
+      "view": "single"
+    },
+    {
+      "id": "subset_09",
+      "title": "Clip 09",
+      "src": "data/videos_phyworld_seed10/subset_09_uniform_motion_eval.mp4",
+      "start": null,
+      "end": null,
+      "verb_label": "uniform_motion_eval",
+      "atomic_text": null,
+      "view": "single"
+    },
+    {
+      "id": "subset_10",
+      "title": "Clip 10",
+      "src": "data/videos_phyworld_seed10/subset_10_uniform_motion_eval.mp4",
+      "start": null,
+      "end": null,
+      "verb_label": "uniform_motion_eval",
+      "atomic_text": null,
+      "view": "single"
+    },
+    {
+      "id": "subset_11",
+      "title": "Clip 11",
+      "src": "data/videos_phyworld_seed10/subset_11_uniform_motion_eval.mp4",
+      "start": null,
+      "end": null,
+      "verb_label": "uniform_motion_eval",
+      "atomic_text": null,
+      "view": "single"
+    },
+    {
+      "id": "subset_12",
+      "title": "Clip 12",
+      "src": "data/videos_phyworld_seed10/subset_12_uniform_motion_eval.mp4",
+      "start": null,
+      "end": null,
+      "verb_label": "uniform_motion_eval",
+      "atomic_text": null,
+      "view": "single"
+    }
+  ]
+}

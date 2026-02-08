@@ -57,6 +57,30 @@ const VIDEO_CONFIGS = [
   },
 ];
 
+const ZERO_VIDEO_CONFIGS = [
+  {
+    id: "ssv2_seed23",
+    label: "SSV2",
+    tag: "Zeroshot",
+    gallery: "video_gallery_ssv2_seed23.json",
+    rankings: "video_rankings_ssv2_seed23.json",
+  },
+  {
+    id: "ntu_seed7",
+    label: "NTU RGB+D",
+    tag: "Zeroshot",
+    gallery: "video_gallery_ntu_seed7.json",
+    rankings: "video_rankings_ntu_seed7.json",
+  },
+  {
+    id: "phyworld_seed10",
+    label: "PhyWorld",
+    tag: "Zeroshot",
+    gallery: "video_gallery_phyworld_seed10.json",
+    rankings: "video_rankings_phyworld_seed10.json",
+  },
+];
+
 
 const elements = {
   datasetSubtitle: document.getElementById("datasetSubtitle"),
@@ -104,6 +128,13 @@ const elements = {
   globalTooltipMeta: document.getElementById("globalTooltipMeta"),
 };
 
+const zeroElements = {
+  videoGallery: document.getElementById("zeroVideoGallery"),
+  videoGalleryStatus: document.getElementById("zeroVideoGalleryStatus"),
+  videoGalleryOverlay: document.getElementById("zeroVideoGalleryOverlay"),
+  videoConfigTabs: document.getElementById("zeroVideoConfigTabs"),
+};
+
 const videoState = {
   items: [],
   queries: [],
@@ -112,6 +143,19 @@ const videoState = {
   queryWindowStart: 0,
   ranking: {},
   activeQueryId: null,
+  dataRoot: null,
+  ready: false,
+  overlayIntroShown: false,
+  configs: [],
+  currentConfig: null,
+  verbNameMap: null,
+};
+
+const zeroVideoState = {
+  items: [],
+  ranking: {},
+  selectedId: null,
+  orderedIds: [],
   dataRoot: null,
   ready: false,
   overlayIntroShown: false,
@@ -1318,10 +1362,10 @@ function ensureQuerySelection() {
   }
 }
 
-function formatVideoTitle(item) {
+function formatVideoTitleForState(localState, item) {
   if (!item) return "";
   const displayVerbLabel =
-    (videoState.verbNameMap && item.verb_label && videoState.verbNameMap[item.verb_label]) ||
+    (localState.verbNameMap && item.verb_label && localState.verbNameMap[item.verb_label]) ||
     item.verb_label ||
     "";
   if (item.atomic_text && displayVerbLabel) {
@@ -1339,6 +1383,10 @@ function formatVideoTitle(item) {
     return displayVerbLabel;
   }
   return item.title || item.id || "";
+}
+
+function formatVideoTitle(item) {
+  return formatVideoTitleForState(videoState, item);
 }
 
 function formatQueryBadge(id) {
@@ -1656,6 +1704,263 @@ async function applyVideoConfig(configId) {
   renderVideoGallery();
 }
 
+function computeZeroVideoOrder() {
+  const ids = zeroVideoState.items.map((item) => item.id);
+  if (!zeroVideoState.selectedId) {
+    zeroVideoState.orderedIds = ids;
+    return;
+  }
+  const selected = zeroVideoState.selectedId;
+  const rankingList = zeroVideoState.ranking[selected] || [];
+  const ranked = rankingList.filter((id) => ids.includes(id) && id !== selected);
+  const remaining = ids.filter((id) => id !== selected && !ranked.includes(id));
+  zeroVideoState.orderedIds = [selected, ...ranked, ...remaining];
+}
+
+function renderZeroVideoGallery() {
+  if (!zeroElements.videoGallery) return;
+  clearNode(zeroElements.videoGallery);
+
+  const overlay = zeroElements.videoGalleryOverlay;
+  const overlayLabel = overlay?.querySelector(".video-gallery-overlay-label");
+  let pendingVideos = 0;
+  let loadedVideos = 0;
+  let totalVideos = 0;
+  let overlayTimer = null;
+
+  const showOverlay = () => {
+    if (overlay) {
+      overlay.classList.remove("hidden");
+    }
+  };
+
+  const hideOverlay = () => {
+    if (overlay) {
+      overlay.classList.add("hidden");
+    }
+    if (overlayTimer) {
+      clearTimeout(overlayTimer);
+      overlayTimer = null;
+    }
+  };
+
+  const showIntroText = !zeroVideoState.overlayIntroShown;
+  if (overlayLabel) {
+    overlayLabel.classList.toggle("hidden", !showIntroText);
+    overlayLabel.textContent = "Loading videos…";
+  }
+  showOverlay();
+  if (showIntroText) {
+    zeroVideoState.overlayIntroShown = true;
+  }
+
+  const lookup = new Map(zeroVideoState.items.map((item) => [item.id, item]));
+  computeZeroVideoOrder();
+
+  const selectedItem = lookup.get(zeroVideoState.selectedId);
+
+  const registerVideo = (video) => {
+    totalVideos += 1;
+    let resolved = false;
+    let loadTimer = null;
+    const markLoaded = () => {
+      if (resolved) return;
+      resolved = true;
+      if (loadTimer) {
+        clearTimeout(loadTimer);
+        loadTimer = null;
+      }
+      pendingVideos = Math.max(0, pendingVideos - 1);
+      loadedVideos += 1;
+      if (loadedVideos >= totalVideos) {
+        hideOverlay();
+      }
+    };
+    loadTimer = window.setTimeout(markLoaded, 6000);
+    video.addEventListener("loadedmetadata", () => {
+      let start = Number(video.dataset.start || 0);
+      let end = Number(video.dataset.end || 0);
+      const duration = Number(video.duration || 0);
+      if (!Number.isFinite(duration) || duration <= 0) {
+        return;
+      }
+      if (!Number.isFinite(start) || start < 0) {
+        start = 0;
+      }
+      if (!Number.isFinite(end) || end <= 0 || end > duration) {
+        end = duration;
+      }
+      if (end - start < 0.2) {
+        start = 0;
+        end = duration;
+      }
+      video.dataset.start = String(start);
+      video.dataset.end = String(end);
+      const safeStart = Math.min(Math.max(start, 0), Math.max(0, duration - 0.03));
+      video.currentTime = safeStart;
+    });
+    video.addEventListener("loadeddata", markLoaded, { once: true });
+    video.addEventListener("canplay", markLoaded, { once: true });
+    video.addEventListener("error", markLoaded, { once: true });
+    video.addEventListener("stalled", markLoaded, { once: true });
+    requestAnimationFrame(() => {
+      if (video.readyState >= 2) {
+        markLoaded();
+      }
+    });
+    video.addEventListener("timeupdate", () => {
+      const duration = Number(video.duration || 0);
+      if (!Number.isFinite(duration) || duration <= 0) {
+        return;
+      }
+      const start = Number(video.dataset.start || 0);
+      const end = Number(video.dataset.end || 0);
+      if (Number.isFinite(end) && end > 0 && end - start >= 0.2 && video.currentTime > end) {
+        video.currentTime = start;
+      }
+      if (Number.isFinite(start) && start >= 0 && video.currentTime < start) {
+        video.currentTime = start;
+      }
+    });
+  };
+
+  zeroVideoState.orderedIds.forEach((id, index) => {
+    const item = lookup.get(id);
+    if (!item) return;
+
+    const card = document.createElement("button");
+    card.type = "button";
+    card.className = "video-card";
+    if (zeroVideoState.selectedId === id) {
+      card.classList.add("selected");
+    } else if (
+      selectedItem &&
+      selectedItem.verb_label &&
+      item.verb_label &&
+      selectedItem.verb_label === item.verb_label
+    ) {
+      card.classList.add("verb-match");
+    }
+    card.addEventListener("click", () => {
+      if (zeroVideoState.selectedId === id) return;
+      zeroVideoState.selectedId = id;
+      renderZeroVideoGallery();
+    });
+
+    const rank = document.createElement("span");
+    rank.className = "video-card-rank";
+    rank.textContent = `#${index + 1}`;
+    card.appendChild(rank);
+
+    if (item.src) {
+      const video = document.createElement("video");
+      video.className = "video-thumb";
+      video.autoplay = true;
+      video.muted = true;
+      video.loop = true;
+      video.playsInline = true;
+      video.preload = "auto";
+      if (item.start != null) {
+        video.dataset.start = String(item.start);
+      }
+      if (item.end != null) {
+        video.dataset.end = String(item.end);
+      }
+      pendingVideos += 1;
+      registerVideo(video);
+      const source = document.createElement("source");
+      source.src = item.src;
+      source.type = "video/mp4";
+      video.appendChild(source);
+      card.appendChild(video);
+    } else {
+      const placeholder = document.createElement("div");
+      placeholder.className = "video-thumb placeholder";
+      placeholder.textContent = "Add video";
+      card.appendChild(placeholder);
+    }
+
+    const title = document.createElement("div");
+    title.className = "video-card-title";
+    title.innerHTML = formatVideoTitleForState(zeroVideoState, item);
+    card.appendChild(title);
+    zeroElements.videoGallery.appendChild(card);
+  });
+
+  if (overlay && totalVideos === 0) {
+    hideOverlay();
+  } else if (overlay) {
+    overlayTimer = window.setTimeout(() => {
+      hideOverlay();
+    }, 8000);
+  }
+  if (overlay && pendingVideos <= 0 && loadedVideos >= totalVideos) {
+    hideOverlay();
+  }
+}
+
+async function initZeroVideoGallery() {
+  if (!zeroElements.videoGallery) return;
+  zeroVideoState.configs = ZERO_VIDEO_CONFIGS.slice();
+  renderZeroVideoConfigTabs();
+  const initial = zeroVideoState.configs[0] || { id: "default" };
+  await applyZeroVideoConfig(initial.id);
+  zeroVideoState.ready = true;
+}
+
+function renderZeroVideoConfigTabs() {
+  if (!zeroElements.videoConfigTabs) return;
+  clearNode(zeroElements.videoConfigTabs);
+  zeroVideoState.configs.forEach((config) => {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "video-config-btn";
+    const labelSpan = document.createElement("span");
+    labelSpan.textContent = config.label || config.id;
+    btn.appendChild(labelSpan);
+    if (config.tag) {
+      const tag = document.createElement("span");
+      tag.className = "config-tag";
+      tag.textContent = `[${config.tag}]`;
+      btn.appendChild(tag);
+    }
+    btn.dataset.config = config.id;
+    if (zeroVideoState.currentConfig === config.id) {
+      btn.classList.add("active");
+    }
+    btn.addEventListener("click", () => {
+      if (zeroVideoState.currentConfig === config.id) return;
+      applyZeroVideoConfig(config.id);
+    });
+    zeroElements.videoConfigTabs.appendChild(btn);
+  });
+}
+
+async function applyZeroVideoConfig(configId) {
+  const config = zeroVideoState.configs.find((item) => item.id === configId) || null;
+  zeroVideoState.currentConfig = config ? config.id : configId;
+  renderZeroVideoConfigTabs();
+  const { root, payload, fileName } = await loadVideoGallery(config);
+  zeroVideoState.dataRoot = root;
+  zeroVideoState.verbNameMap = await loadVerbNameMap(root, config);
+  if (!payload || !payload.videos || payload.videos.length === 0) {
+    zeroVideoState.items = buildPlaceholderVideos(12);
+    if (zeroElements.videoGalleryStatus) {
+      zeroElements.videoGalleryStatus.textContent = `Add data/${fileName} to populate zeroshot retrieval.`;
+      zeroElements.videoGalleryStatus.classList.remove("hidden");
+    }
+  } else {
+    zeroVideoState.items = payload.videos;
+    if (zeroElements.videoGalleryStatus) {
+      zeroElements.videoGalleryStatus.classList.add("hidden");
+    }
+  }
+  zeroVideoState.ranking = await loadVideoRankings(root, config);
+  const defaultId = payload?.default || zeroVideoState.items[0]?.id;
+  zeroVideoState.selectedId = defaultId || null;
+  renderZeroVideoGallery();
+}
+
 function bindControls() {
   elements.viewToggle.addEventListener("click", (event) => {
     const btn = event.target.closest("button");
@@ -1789,7 +2094,10 @@ function init() {
       resizeCanvas();
     }
   });
-  loadManifest().then(() => initVideoGallery());
+  loadManifest().then(() => {
+    initVideoGallery();
+    initZeroVideoGallery();
+  });
 
   if (!tryRenderMath()) {
     const start = Date.now();

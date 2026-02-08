@@ -1324,6 +1324,20 @@ button:hover {
   gap: 16px;
 }
 
+.video-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 14px;
+}
+
+.video-zeroshot-section .video-query-header {
+  gap: 10px;
+}
+
+.video-zeroshot-section .video-query-header p {
+  text-align: left;
+}
+
 .video-result-header {
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));

@@ -1,0 +1,125 @@
+{
+  "default": "subset_07",
+  "videos": [
+    {
+      "id": "subset_01",
+      "title": "Clip 01",
+      "src": "data/videos_ntu_seed7/S011C001P028R002A011_rgb.mp4",
+      "start": 0,
+      "end": 0,
+      "verb_label": "A011",
+      "atomic_text": "",
+      "view": "single"
+    },
+    {
+      "id": "subset_02",
+      "title": "Clip 02",
+      "src": "data/videos_ntu_seed7/S014C001P039R002A011_rgb.mp4",
+      "start": 0,
+      "end": 0,
+      "verb_label": "A011",
+      "atomic_text": "",
+      "view": "single"
+    },
+    {
+      "id": "subset_03",
+      "title": "Clip 03",
+      "src": "data/videos_ntu_seed7/S016C002P021R001A011_rgb.mp4",
+      "start": 0,
+      "end": 0,
+      "verb_label": "A011",
+      "atomic_text": "",
+      "view": "single"
+    },
+    {
+      "id": "subset_04",
+      "title": "Clip 04",
+      "src": "data/videos_ntu_seed7/S004C003P007R001A001_rgb.mp4",
+      "start": 0,
+      "end": 0,
+      "verb_label": "A001",
+      "atomic_text": "",
+      "view": "single"
+    },
+    {
+      "id": "subset_05",
+      "title": "Clip 05",
+      "src": "data/videos_ntu_seed7/S001C003P006R001A001_rgb.mp4",
+      "start": 0,
+      "end": 0,
+      "verb_label": "A001",
+      "atomic_text": "",
+      "view": "single"
+    },
+    {
+      "id": "subset_06",
+      "title": "Clip 06",
+      "src": "data/videos_ntu_seed7/S012C001P017R001A001_rgb.mp4",
+      "start": 0,
+      "end": 0,
+      "verb_label": "A001",
+      "atomic_text": "",
+      "view": "single"
+    },
+    {
+      "id": "subset_07",
+      "title": "Clip 07",
+      "src": "data/videos_ntu_seed7/S005C003P013R001A008_rgb.mp4",
+      "start": 0,
+      "end": 0,
+      "verb_label": "A008",
+      "atomic_text": "",
+      "view": "single"
+    },
+    {
+      "id": "subset_08",
+      "title": "Clip 08",
+      "src": "data/videos_ntu_seed7/S010C002P025R001A008_rgb.mp4",
+      "start": 0,
+      "end": 0,
+      "verb_label": "A008",
+      "atomic_text": "",
+      "view": "single"
+    },
+    {
+      "id": "subset_09",
+      "title": "Clip 09",
+      "src": "data/videos_ntu_seed7/S007C001P027R001A008_rgb.mp4",
+      "start": 0,
+      "end": 0,
+      "verb_label": "A008",
+      "atomic_text": "",
+      "view": "single"
+    },
+    {
+      "id": "subset_10",
+      "title": "Clip 10",
+      "src": "data/videos_ntu_seed7/S014C001P015R002A012_rgb.mp4",
+      "start": 0,
+      "end": 0,
+      "verb_label": "A012",
+      "atomic_text": "",
+      "view": "single"
+    },
+    {
+      "id": "subset_11",
+      "title": "Clip 11",
+      "src": "data/videos_ntu_seed7/S003C002P017R002A012_rgb.mp4",
+      "start": 0,
+      "end": 0,
+      "verb_label": "A012",
+      "atomic_text": "",
+      "view": "single"
+    },
+    {
+      "id": "subset_12",
+      "title": "Clip 12",
+      "src": "data/videos_ntu_seed7/S006C003P007R001A012_rgb.mp4",
+      "start": 0,
+      "end": 0,
+      "verb_label": "A012",
+      "atomic_text": "",
+      "view": "single"
+    }
+  ]
+}

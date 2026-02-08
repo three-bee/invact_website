@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="viewport" content="width=1280" />
 <title>InvAct</title>
 <link rel="stylesheet" href="styles.css" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;600&family=Google+Sans+Code:wght@400;500&display=swap" />
@@ -92,7 +92,7 @@
 
 <section class="paper-section video-query-section video-query-section-v2">
 <div class="video-query-header">
-<p>Select a query clip below, and InvAct will fetch the most similar atomic-action videos from Ego-Exo4D validation set. <strong>Shuffle queries</strong> to see different queries.</p>
+<p>Select a query clip below, and InvAct will fetch the most similar atomic-action videos from <a href="https://ego-exo4d-data.org/" class="paper-link">Ego-Exo4D validation set</a>. <strong>Shuffle queries</strong> to see different queries.</p>
 <div class="video-query-controls">
 <button id="videoShuffleBtn" class="video-shuffle-btn" type="button">Shuffle queries</button>
 </div>
@@ -794,6 +794,25 @@ Right figure shows that our embedding space improves VLA performance and increas
 <img class="figure-embed" src="data/libero10_scores.svg" alt="LIBERO-10 scores" />
 </div>
 </div>
+</div>
+</section>
+
+<section class="paper-section video-query-section video-zeroshot-section">
+<h2>Zeroshot Retrieval</h2>
+<div class="video-query-header">
+<p>
+Explore zeroshot retrieval transfer on <a href="https://rose1.ntu.edu.sg/dataset/actionRecognition/" class="paper-link"><strong>NTU RGB+D</strong></a>, <a href="https://www.qualcomm.com/developer/software/something-something-v-2-dataset" class="paper-link"><strong>SSV2</strong></a>, and <a href="https://phyworld.github.io/" class="paper-link"><strong>PhyWorld</strong></a> datasets. Click on a video to assign it as the query, and sort the rest as a gallery based on its action similarity.
+</p>
+<div id="zeroVideoConfigTabs" class="video-config-tabs"></div>
+</div>
+<div id="zeroVideoGalleryStatus" class="video-gallery-status hidden"></div>
+<div class="video-gallery-wrap">
+<div id="zeroVideoGalleryOverlay" class="video-gallery-overlay">
+<div class="video-gallery-overlay-inner">
+<div class="video-gallery-overlay-label">Loading videos…</div>
+</div>
+</div>
+<div id="zeroVideoGallery" class="video-gallery"></div>
 </div>
 </section>
 
