@@ -90,6 +90,7 @@ const elements = {
   videoGalleryStatus: document.getElementById("videoGalleryStatus"),
   videoGalleryOverlay: document.getElementById("videoGalleryOverlay"),
   videoConfigTabs: document.getElementById("videoConfigTabs"),
+  videoQueryTitleRow: document.getElementById("videoQueryTitleRow"),
   videoQueryRow: document.getElementById("videoQueryRow"),
   videoResultRow: document.getElementById("videoResultRow"),
   videoShuffleBtn: document.getElementById("videoShuffleBtn"),
@@ -1400,6 +1401,9 @@ function formatQueryBadge(id) {
 
 function renderVideoGallery() {
   if (!elements.videoGallery || !elements.videoQueryRow || !elements.videoResultRow) return;
+  if (elements.videoQueryTitleRow) {
+    clearNode(elements.videoQueryTitleRow);
+  }
   clearNode(elements.videoQueryRow);
   clearNode(elements.videoResultRow);
 
@@ -1543,6 +1547,7 @@ function renderVideoGallery() {
     const button = document.createElement("button");
     button.type = "button";
     button.className = "video-card";
+    const isActiveQuery = videoState.activeQueryId === id;
     if (videoState.activeQueryId === id) {
       button.classList.add("selected");
     }
@@ -1551,6 +1556,12 @@ function renderVideoGallery() {
       videoState.activeQueryId = id;
       renderVideoGallery();
     });
+    if (elements.videoQueryTitleRow) {
+      const titleCell = document.createElement("div");
+      titleCell.className = "video-result-title";
+      titleCell.textContent = isActiveQuery ? "Current query" : "";
+      elements.videoQueryTitleRow.appendChild(titleCell);
+    }
 
     const badge = document.createElement("span");
     badge.className = "video-card-rank video-card-query";

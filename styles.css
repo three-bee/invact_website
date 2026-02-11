@@ -1368,6 +1368,13 @@ button:hover {
   gap: 14px;
 }
 
+.video-query-title-row {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+  align-items: center;
+}
+
 .video-result-row {
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -1430,7 +1437,6 @@ button:hover {
   color: var(--muted);
 }
 
-
 .video-card-rank {
   font-size: 10px;
   color: #fff;
@@ -1450,6 +1456,7 @@ button:hover {
     gap: 6px;
   }
   .video-query-row,
+  .video-query-title-row,
   .video-result-row {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -1457,6 +1464,7 @@ button:hover {
 
 @media (max-width: 600px) {
   .video-query-row,
+  .video-query-title-row,
   .video-result-row {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
