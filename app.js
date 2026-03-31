@@ -54,6 +54,7 @@ const VIDEO_CONFIGS = [
     label: "Ego-Exo4D (Seed 42 Feb)",
     gallery: "video_gallery_seed42_feb_trimmed.json",
     rankings: "video_rankings_seed42_feb.json",
+    initialQueries: ["q_119", "q_182", "q_109", "q_154", "q_96"],
   },
 ];
 
@@ -1309,6 +1310,20 @@ function sortQueryIds(ids) {
   });
 }
 
+function normalizeQueryId(id) {
+  if (id == null) return "";
+  const value = String(id).trim();
+  const shortMatch = value.match(/^q_(\d+)$/i);
+  if (shortMatch) {
+    return `query_${shortMatch[1]}`;
+  }
+  const fullMatch = value.match(/^query_(\d+)$/i);
+  if (fullMatch) {
+    return `query_${fullMatch[1]}`;
+  }
+  return value;
+}
+
 function clampQueryWindowStart(start) {
   const maxStart = Math.max(0, videoState.queryIds.length - 5);
   const step = 5;
@@ -1706,7 +1721,15 @@ async function applyVideoConfig(configId) {
   const defaultId = payload?.default_query || payload?.default || videoState.queryIds[0];
   const initialCount = Math.min(5, videoState.queryIds.length);
   if (initialCount > 0) {
-    videoState.visibleQueries = pickRandomIds(videoState.queryIds, initialCount);
+    const configuredInitialQueries = (config?.initialQueries || [])
+      .map((id) => normalizeQueryId(id))
+      .filter((id, idx, arr) => id && arr.indexOf(id) === idx && videoState.queryIds.includes(id))
+      .slice(0, initialCount);
+    if (configuredInitialQueries.length) {
+      videoState.visibleQueries = configuredInitialQueries;
+    } else {
+      videoState.visibleQueries = pickRandomIds(videoState.queryIds, initialCount);
+    }
     videoState.activeQueryId = videoState.visibleQueries[0] || defaultId || null;
   } else {
     videoState.visibleQueries = [];
