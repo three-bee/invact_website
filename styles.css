@@ -139,7 +139,8 @@ body::before {
   margin: 0;
 }
 
-.paper-authors {
+.paper-authors,
+.paper-anonymous-note {
   font-size: 15px;
   color: var(--muted);
 }
@@ -203,6 +204,10 @@ body::before {
 .method-grid {
   grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
   align-items: start;
+}
+
+.method-grid--arch {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
 }
 
 .keystep-problem-layout {
@@ -276,22 +281,6 @@ body::before {
   font-weight: 600;
 }
 
-.results-table .c0 { background: rgb(130, 201, 224); }
-.results-table .c1 { background: rgb(163, 215, 232); }
-.results-table .c2 { background: rgb(177, 221, 236); }
-.results-table .c3 { background: rgb(188, 226, 238); }
-.results-table .c4 { background: rgb(197, 230, 241); }
-.results-table .c5 { background: rgb(205, 233, 243); }
-.results-table .c6 { background: rgb(212, 236, 244); }
-.results-table .c7 { background: rgb(218, 239, 246); }
-.results-table .c8 { background: rgb(224, 242, 247); }
-.results-table .c9 { background: rgb(230, 244, 249); }
-.results-table .c10 { background: rgb(236, 247, 250); }
-.results-table .c11 { background: rgb(241, 249, 251); }
-.results-table .c12 { background: rgb(246, 251, 253); }
-.results-table .c13 { background: rgb(250, 253, 254); }
-.results-table .c14 { background: rgb(255, 255, 255); }
-
 
 .math-block p {
   margin: 0 0 12px;
@@ -323,12 +312,34 @@ body::before {
   gap: 18px;
 }
 
+.figure-stack--arch {
+  margin-top: 4px;
+}
+
 .figure-embed {
   width: 100%;
   aspect-ratio: 16 / 9;
   border: none;
   border-radius: 0;
   background: transparent;
+}
+
+.figure-embed--arch {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin-left: 0;
+}
+
+@media (max-width: 900px) {
+  .figure-stack--arch {
+    margin-top: 0;
+  }
+
+  .figure-embed--arch {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
 .figure-caption {
@@ -1186,6 +1197,12 @@ button:hover {
   text-align: center;
 }
 
+.inference-note {
+  display: block;
+  margin-top: 6px;
+  color: #c1121f;
+}
+
 .video-query-controls {
   margin-top: 12px;
   display: flex;
@@ -1435,6 +1452,11 @@ button:hover {
 .video-card-title {
   font-size: 12px;
   color: var(--muted);
+}
+
+.video-card.selected .video-card-title {
+  color: var(--accent-3);
+  font-weight: 700;
 }
 
 .video-card-rank {

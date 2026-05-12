@@ -54,7 +54,6 @@ const VIDEO_CONFIGS = [
     label: "Ego-Exo4D (Seed 42 Feb)",
     gallery: "video_gallery_seed42_feb_trimmed.json",
     rankings: "video_rankings_seed42_feb.json",
-    initialQueries: ["q_119", "q_182", "q_109", "q_154", "q_96"],
   },
 ];
 
@@ -81,6 +80,45 @@ const ZERO_VIDEO_CONFIGS = [
     rankings: "video_rankings_phyworld_seed10.json",
   },
 ];
+
+const BUNDLED_VIDEO_DATA = window.__INVACT_VIDEO_DATA__ || null;
+
+function isAbsoluteLikePath(path) {
+  return /^(?:[a-z]+:)?\/\//i.test(path) || path.startsWith("data:") || path.startsWith("blob:");
+}
+
+function resolveMediaPath(root, rawPath) {
+  if (!rawPath) return rawPath;
+  const path = String(rawPath).replace(/\\/g, "/");
+  if (isAbsoluteLikePath(path) || path.startsWith("/")) {
+    return path;
+  }
+  const cleanRoot = String(root || "")
+    .replace(/\\/g, "/")
+    .replace(/\/+$/g, "");
+  if (!cleanRoot || cleanRoot === "." || cleanRoot === "./") {
+    return path;
+  }
+  if (path.startsWith(`${cleanRoot}/`)) {
+    return path;
+  }
+  if (path.startsWith("data/") && /(^|\/)data$/.test(cleanRoot)) {
+    return `${cleanRoot}/${path.slice("data/".length)}`;
+  }
+  return `${cleanRoot}/${path}`;
+}
+
+function resolveVideoItems(items, root) {
+  return (items || []).map((item) => {
+    if (!item || !item.src) {
+      return item;
+    }
+    return {
+      ...item,
+      src: resolveMediaPath(root, item.src),
+    };
+  });
+}
 
 
 const elements = {
@@ -165,6 +203,18 @@ const zeroVideoState = {
   currentConfig: null,
   verbNameMap: null,
 };
+
+const INITIAL_QUERY_ORDER = ["query_119", "query_182", "query_109", "query_154", "query_96"];
+
+function pickInitialQueries(ids, count) {
+  const preferred = INITIAL_QUERY_ORDER.filter((id) => ids.includes(id));
+  if (preferred.length >= count) {
+    return preferred.slice(0, count);
+  }
+  const used = new Set(preferred);
+  const fallback = ids.filter((id) => !used.has(id)).slice(0, count - preferred.length);
+  return [...preferred, ...fallback];
+}
 
 
 const colorCache = new Map();
@@ -288,6 +338,88 @@ function rgba(rgb, alpha) {
 
 function clamp(value, min, max) {
   return Math.min(max, Math.max(min, value));
+}
+
+function colorQuantitativeTableByColumn() {
+  const table = document.querySelector(".results-table");
+  if (!table || !table.tBodies || !table.tBodies[0]) {
+    return;
+  }
+
+  const metricCount = 12;
+  const light = [255, 255, 255];
+  const dark = [188, 226, 238];
+  const rows = Array.from(table.tBodies[0].rows);
+
+  const parsedRows = rows
+    .map((row) => {
+      const cells = Array.from(row.cells);
+      if (cells.length < metricCount) {
+        return null;
+      }
+      const metricCells = cells.slice(-metricCount);
+      const values = metricCells.map((cell) => Number.parseFloat(cell.textContent.trim()));
+      return { metricCells, values };
+    })
+    .filter(Boolean);
+
+  if (parsedRows.length === 0) {
+    return;
+  }
+
+  // Build per-column scales where only top-3 values get strong emphasis.
+  const rankScales = Array.from({ length: metricCount }, (_, idx) => {
+    const columnValues = parsedRows
+      .map((row) => row.values[idx])
+      .filter((value) => Number.isFinite(value));
+    const uniqueSortedDesc = Array.from(new Set(columnValues)).sort((a, b) => b - a);
+    const scale = new Map();
+    const top1 = uniqueSortedDesc[0];
+    const top2 = uniqueSortedDesc[1];
+    const top3 = uniqueSortedDesc[2];
+
+    uniqueSortedDesc.forEach((value) => {
+      if (value === top1) {
+        scale.set(value, 1.0);
+        return;
+      }
+      if (value === top2) {
+        scale.set(value, 0.78);
+        return;
+      }
+      if (value === top3) {
+        scale.set(value, 0.58);
+        return;
+      }
+
+      // Keep all non-top-3 values close to white.
+      const rest = uniqueSortedDesc.slice(3);
+      const restIdx = rest.indexOf(value);
+      const restSpan = Math.max(rest.length - 1, 1);
+      const restT = restIdx < 0 ? 0.04 : 0.18 - (0.14 * restIdx) / restSpan;
+      scale.set(value, restT);
+    });
+    return scale;
+  });
+
+  parsedRows.forEach(({ metricCells, values }) => {
+    values.forEach((value, idx) => {
+      const cell = metricCells[idx];
+      if (!Number.isFinite(value)) {
+        cell.style.backgroundColor = "";
+        return;
+      }
+      const t = rankScales[idx].get(value);
+      if (!Number.isFinite(t)) {
+        cell.style.backgroundColor = "";
+        return;
+      }
+      const r = Math.round(light[0] + (dark[0] - light[0]) * t);
+      const g = Math.round(light[1] + (dark[1] - light[1]) * t);
+      const b = Math.round(light[2] + (dark[2] - light[2]) * t);
+      cell.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+    });
+  });
 }
 
 function clearNode(node) {
@@ -1225,9 +1357,12 @@ async function loadManifest() {
 }
 
 async function loadVideoGallery(config) {
+  const fileName = config?.gallery || "video_gallery.json";
+  if (BUNDLED_VIDEO_DATA?.galleries?.[fileName]) {
+    return { root: ".", payload: BUNDLED_VIDEO_DATA.galleries[fileName], fileName };
+  }
   const candidates = [DATA_ROOT, "data", "../data"];
   const cacheBust = `v=${Date.now()}`;
-  const fileName = config?.gallery || "video_gallery.json";
   for (const root of candidates) {
     try {
       const payload = await fetchJson(`${root}/${fileName}?${cacheBust}`);
@@ -1253,6 +1388,10 @@ async function loadVerbNameMap(root, config) {
 
 async function loadVideoRankings(root, config) {
   const fileName = config?.rankings || "video_rankings.json";
+  if (BUNDLED_VIDEO_DATA?.rankings?.[fileName]) {
+    const payload = BUNDLED_VIDEO_DATA.rankings[fileName];
+    return payload.rankings || payload || {};
+  }
   try {
     const payload = await fetchJson(`${root}/${fileName}?v=${Date.now()}`);
     return payload.rankings || payload || {};
@@ -1308,20 +1447,6 @@ function sortQueryIds(ids) {
     }
     return String(a).localeCompare(String(b));
   });
-}
-
-function normalizeQueryId(id) {
-  if (id == null) return "";
-  const value = String(id).trim();
-  const shortMatch = value.match(/^q_(\d+)$/i);
-  if (shortMatch) {
-    return `query_${shortMatch[1]}`;
-  }
-  const fullMatch = value.match(/^query_(\d+)$/i);
-  if (fullMatch) {
-    return `query_${fullMatch[1]}`;
-  }
-  return value;
 }
 
 function clampQueryWindowStart(start) {
@@ -1709,8 +1834,9 @@ async function applyVideoConfig(configId) {
       elements.videoGalleryStatus.classList.remove("hidden");
     }
   } else {
-    videoState.items = payload.videos;
-    videoState.queries = (payload.queries && payload.queries.length ? payload.queries : payload.videos);
+    videoState.items = resolveVideoItems(payload.videos, root);
+    const queryItems = payload.queries && payload.queries.length ? payload.queries : payload.videos;
+    videoState.queries = resolveVideoItems(queryItems, root);
     if (elements.videoGalleryStatus) {
       elements.videoGalleryStatus.classList.add("hidden");
     }
@@ -1721,15 +1847,7 @@ async function applyVideoConfig(configId) {
   const defaultId = payload?.default_query || payload?.default || videoState.queryIds[0];
   const initialCount = Math.min(5, videoState.queryIds.length);
   if (initialCount > 0) {
-    const configuredInitialQueries = (config?.initialQueries || [])
-      .map((id) => normalizeQueryId(id))
-      .filter((id, idx, arr) => id && arr.indexOf(id) === idx && videoState.queryIds.includes(id))
-      .slice(0, initialCount);
-    if (configuredInitialQueries.length) {
-      videoState.visibleQueries = configuredInitialQueries;
-    } else {
-      videoState.visibleQueries = pickRandomIds(videoState.queryIds, initialCount);
-    }
+    videoState.visibleQueries = pickInitialQueries(videoState.queryIds, initialCount);
     videoState.activeQueryId = videoState.visibleQueries[0] || defaultId || null;
   } else {
     videoState.visibleQueries = [];
@@ -1984,7 +2102,7 @@ async function applyZeroVideoConfig(configId) {
       zeroElements.videoGalleryStatus.classList.remove("hidden");
     }
   } else {
-    zeroVideoState.items = payload.videos;
+    zeroVideoState.items = resolveVideoItems(payload.videos, root);
     if (zeroElements.videoGalleryStatus) {
       zeroElements.videoGalleryStatus.classList.add("hidden");
     }
@@ -2117,21 +2235,9 @@ function init() {
     return true;
   };
 
-  bindControls();
-  state.panels.forEach((_, idx) => bindCanvasEvents(idx));
-  resizeCanvas();
-  window.addEventListener("resize", resizeCanvas);
-  window.addEventListener("focus", resizeCanvas);
-  window.addEventListener("pageshow", resizeCanvas);
-  document.addEventListener("visibilitychange", () => {
-    if (document.visibilityState === "visible") {
-      resizeCanvas();
-    }
-  });
-  loadManifest().then(() => {
-    initVideoGallery();
-    initZeroVideoGallery();
-  });
+  colorQuantitativeTableByColumn();
+  initVideoGallery();
+  initZeroVideoGallery();
 
   if (!tryRenderMath()) {
     const start = Date.now();
